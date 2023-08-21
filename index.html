@@ -2,16 +2,45 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/public/logo-white.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>UniTour 360°</title>
     <link rel="stylesheet" href="/src/styles.css">
   </head>
-  <body class="bg-slate-400">
+  <body>
 
-    <h1 class="text-3xl font-bold text-cyan-300">
-      Hello world!
-    </h1>
+    <section>
+      <nav class="z-10 absolute w-full flex justify-between p-5">
+        <div><img class="w-40 select-none" src="/public/logo-white.png" alt="UniTour"></div>
+
+        <div class="w-12 h-12">
+          <svg id="menu-open" class="w-full fill-white stroke-white h-full hover:fill-black/50 hover:stroke-black/50 cursor-pointer" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="m11 16.745c0-.414.336-.75.75-.75h9.5c.414 0 .75.336.75.75s-.336.75-.75.75h-9.5c-.414 0-.75-.336-.75-.75zm-9-5c0-.414.336-.75.75-.75h18.5c.414 0 .75.336.75.75s-.336.75-.75.75h-18.5c-.414 0-.75-.336-.75-.75zm4-5c0-.414.336-.75.75-.75h14.5c.414 0 .75.336.75.75s-.336.75-.75.75h-14.5c-.414 0-.75-.336-.75-.75z" fill-rule="nonzero"/>
+          </svg>
+
+          <svg id="menu-close" class="hidden w-full fill-white stroke-white h-full hover:fill-black/50 hover:stroke-black/50 cursor-pointer" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/></svg>
+        </div>
+      </nav>
+
+      <img class="w-screen h-screen object-cover select-none" src="/public/banner.png" alt="">
+    </section>
+
+    <article id="menu-options" class="hidden absolute top-0 w-screen h-screen bg-black/50">
+      <main class="w-full h-full flex justify-center items-center text-white">
+        <ul class="text-center">
+          <li class="uppercase">Acerca de</li>
+          <li class="uppercase">Servicios</li>
+          <li class="uppercase">Inicio</li>
+          <li class="uppercase">Tour</li>
+          <li class="uppercase">Desarrolladores</li>
+        </ul>
+      </main>
+    </article>
+
+
+    <article>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore perferendis facere sint quaerat debitis minus dolor aliquam cumque officia sunt sed, atque ex, illo architecto ea rerum recusandae omnis quidem velit perspiciatis? Consectetur iste eum illo dolorum quaerat, sapiente dolores odio enim exercitationem rerum amet itaque molestias distinctio praesentium officiis beatae omnis repudiandae blanditiis, quas id aut. Optio dolores tempore voluptates deserunt? Distinctio aspernatur ipsum quaerat laboriosam, impedit saepe suscipit exercitationem reiciendis perspiciatis esse sequi ipsam quos doloribus numquam explicabo vel libero tempore possimus veniam quisquam et sint! Quae consequuntur reiciendis accusantium tempore nemo autem vitae recusandae eum dolores, dolore tenetur omnis nobis quisquam beatae maxime distinctio ipsum. Ea magni sint et, exercitationem quod consectetur quidem minima illo porro numquam accusantium asperiores doloribus qui aspernatur sit odit, debitis saepe, deserunt alias obcaecati cupiditate nobis error! Autem nihil libero eos, nesciunt adipisci sit nemo pariatur ad enim, culpa eum placeat ea officia laudantium recusandae rerum minima obcaecati aspernatur commodi perspiciatis. Architecto aliquid quae minus voluptas fugiat nostrum deserunt adipisci sed dolore commodi nobis, hic accusamus id incidunt consequatur voluptates dolor ullam nisi numquam labore quia sapiente quo neque! Odit, voluptate? Ex qui, sint, officia, repellat sunt in iure eligendi dolor nulla aliquam tenetur amet fugiat quae neque provident voluptatem? Quia laboriosam minus aliquam recusandae incidunt quae ea perspiciatis tempora in velit tempore quod, ut porro perferendis reprehenderit sapiente soluta aliquid praesentium molestias aperiam accusamus debitis? Eaque inventore molestias illum quo! Est culpa ipsum dolorem dignissimos ea nostrum ut mollitia deleniti tenetur!
+    </article>
 
     <script type="module" src="/src/index.js"></script>
   </body>
