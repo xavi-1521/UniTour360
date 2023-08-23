@@ -13,6 +13,18 @@ export default defineConfig({
         {
           filename: 'about.html',
           template: 'about.html',
+        },
+        {
+          filename: 'services.html',
+          template: 'services.html',
+        },
+        {
+          filename: 'tour.html',
+          template: 'tour.html',
+        },
+        {
+          filename: 'devs.html',
+          template: 'devs.html',
         }
       ]
     })
