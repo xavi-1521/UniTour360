@@ -1,1 +1,171 @@
-<h1>Tour</h1>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo-white.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UniTour 360°</title>
+    <link rel="stylesheet" href="/src/styles.css">
+  </head>
+  <body class="w-screen h-screen overflow-x-hidden">
+
+    <section class="relative w-screen h-20">
+      <nav class="absolute z-50 flex justify-between w-full p-2 backdrop-blur-lg bg-slate-900/10">
+        <div class="w-full"><img class="h-16 select-none" src="/logo-white.png" alt="UniTour"></div>
+
+        <div class="w-12 h-12 pt-2 pr-2">
+          <svg id="menu-open" class="w-full h-full transition duration-300 transform cursor-pointer fill-white stroke-white hover:fill-black/50 hover:stroke-black/50 hover:rotate-[10deg]" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="m11 16.745c0-.414.336-.75.75-.75h9.5c.414 0 .75.336.75.75s-.336.75-.75.75h-9.5c-.414 0-.75-.336-.75-.75zm-9-5c0-.414.336-.75.75-.75h18.5c.414 0 .75.336.75.75s-.336.75-.75.75h-18.5c-.414 0-.75-.336-.75-.75zm4-5c0-.414.336-.75.75-.75h14.5c.414 0 .75.336.75.75s-.336.75-.75.75h-14.5c-.414 0-.75-.336-.75-.75z" fill-rule="nonzero"/>
+          </svg>
+
+          <svg id="menu-close" class="hidden w-full h-full transition duration-300 transform cursor-pointer fill-white stroke-white hover:fill-black/50 hover:stroke-black/50 hover:rotate-12" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/></svg>
+        </div>
+      </nav>
+
+      <img class="w-full h-full" src="img/360/banner-about.jpg" alt="Banner">
+    </section>
+
+    <article id="menu-options" class="fixed top-0 left-0 z-40 hidden w-screen h-screen backdrop-blur-sm bg-black/50">
+      <main class="flex items-center justify-center w-full h-full text-white">
+        <ul class="flex flex-col gap-5 text-center select-none animate-flip-down animate-once animate-ease-in-out">
+          <li>
+            <a href="/index.html" class="text-2xl uppercase cursor-pointer hover:text-blue-500">Inicio</a>
+          </li>
+          <li>
+            <a class="text-2xl uppercase cursor-pointer hover:text-blue-500">Acerca de</a>
+          </li>
+          <li>
+            <a href="/services.html" class="text-2xl uppercase cursor-pointer hover:text-blue-500">Servicios</a>
+          </li>
+          <li>
+            <a href="/tour.html" class="text-2xl uppercase cursor-pointer hover:text-blue-500">Tour</a>
+          </li>
+          <li>
+            <a href="/devs.html" class="text-2xl uppercase cursor-pointer hover:text-blue-500">Desarrolladores</a>
+          </li>
+        </ul>
+      </main>
+    </article>
+
+    <!-- =================================================================== -->
+
+    <section class="relative w-full h-96">
+      <script src="https://static.kuula.io/embed.js" data-kuula="https://kuula.co/share/5k4qK?logo=1&info=1&fs=0&vr=0&sd=1&gyro=0&autorotate=0.19&thumbs=1&inst=0&keys=0" data-width="100%" data-height="400px"></script>
+
+      <div class="absolute rounded-[1rem] w-5/6 inset-y-80 inset-x-[6.5rem] backdrop-blur-lg bg-slate-200/70 h-60">
+        <div class="flex items-center justify-between w-full h-full p-4">
+          <div>
+            <img src="/logo-black.png" alt="">
+          </div>
+
+          <div class="flex flex-col pr-14">
+            <span class="mt-2 text-5xl font-extrabold text-center">Tour Virtual 360° de UNIPAZ</span>
+
+            <span class="mt-3 text-sm text-center text-slate-500">
+              Descubre cada rincón, interactúa con los espacios y sumérgete en una experiencia única desde cualquier dispositivo. ¡La aventura te espera!
+            </span>
+
+            <span class="mt-5 text-center">
+              <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Ver Tour</button>
+
+              <a href="/about.html" class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-yellow-200 focus:ring-4 focus:outline-none focus:ring-red-100">
+                <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0">
+                    Ir a Acerca de
+                </span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+
+    <section class="flex w-full h-auto gap-8 px-16 pt-5 my-5 mt-56">
+      <div class="w-1/2 rounded-lg h-96">
+        <img class="h-full" src="/img/PC_(AI).png" alt="AI">
+      </div>
+
+      <div class="flex flex-col justify-center w-1/2">
+        <h1 class="mb-10 text-3xl font-extrabold">Adobe Illustrator</h1>
+
+        <p class="mb-5">Es una potente herramienta de diseño gráfico vectorial que te permite crear ilustraciones, gráficos y diseños de alta calidad. <br><br>
+          Este editor de gráficos vectoriales permitió crear contenido para las redes sociales de UniTour360*, editar imágenes 360° y mucho más.</p>
+
+      </div>
+    </section>
+
+    <section class="flex w-full h-auto gap-8 px-16 pt-5 my-5">
+      <div class="flex flex-col justify-center w-1/2">
+        <h1 class="mb-10 text-3xl font-extrabold">Adobe Illustrator</h1>
+
+        <p class="mb-5">
+          Es una potente herramienta de diseño gráfico vectorial que te permite crear ilustraciones, gráficos y diseños de alta calidad. <br><br>
+          Este editor de gráficos vectoriales permitió crear contenido para las redes sociales de UniTour360*, editar imágenes 360° y mucho más.
+        </p>
+      </div>
+
+      <div class="flex justify-end w-1/2 rounded-lg h-96">
+        <img class="h-full" src="/img/PC_(AI).png" alt="AI">
+      </div>
+    </section>
+
+    <section class="flex w-full h-auto gap-8 px-16 pt-5 my-5">
+      <div class="w-1/2 rounded-lg h-96">
+        <img class="w-full" src="/img/360/Interfaces_Celular.png" alt="AI">
+      </div>
+
+      <div class="flex flex-col justify-center w-1/2">
+        <h1 class="mb-10 text-3xl font-extrabold">Adobe Illustrator</h1>
+
+        <p class="mb-5">Es una potente herramienta de diseño gráfico vectorial que te permite crear ilustraciones, gráficos y diseños de alta calidad. <br><br>
+          Este editor de gráficos vectoriales permitió crear contenido para las redes sociales de UniTour360*, editar imágenes 360° y mucho más.</p>
+      </div>
+    </section>
+
+    <section class="flex w-full h-auto gap-8 px-16 pt-5 my-5">
+      <div class="flex flex-col justify-center w-1/2">
+        <h1 class="mb-10 text-3xl font-extrabold">Adobe Illustrator</h1>
+
+        <p class="mb-5">Es una potente herramienta de diseño gráfico vectorial que te permite crear ilustraciones, gráficos y diseños de alta calidad. <br><br>
+          Este editor de gráficos vectoriales permitió crear contenido para las redes sociales de UniTour360*, editar imágenes 360° y mucho más.</p>
+
+      </div>
+
+      <div class="flex justify-end w-1/2 rounded-lg h-96">
+        <img class="h-full" src="/img/PC_(AI).png" alt="AI">
+      </div>
+    </section>
+
+    <section class="flex w-full h-auto gap-8 px-16 pt-5 my-5">
+      <div class="w-1/2 rounded-lg h-96">
+        <img class="h-full" src="/img/PC_(AI).png" alt="AI">
+      </div>
+
+      <div class="flex flex-col justify-center w-1/2">
+        <h1 class="mb-10 text-3xl font-extrabold">Adobe Illustrator</h1>
+
+        <p class="mb-5">
+          Es una potente herramienta de diseño gráfico vectorial que te permite crear ilustraciones, gráficos y diseños de alta calidad. <br><br>
+          Este editor de gráficos vectoriales permitió crear contenido para las redes sociales de UniTour360*, editar imágenes 360° y mucho más.
+        </p>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+
+    <section class="flex flex-col gap-2 px-16 mt-16">
+      <div class="w-full h-80 bg-slate-600">
+      </div>
+      <div class="flex gap-2">
+        <div class="w-1/2 bg-red-400 h-80">
+        </div>
+
+        <div class="w-1/2 bg-blue-600 h-80">
+        </div>
+      </div>
+    </section>
+
+    <script defer type="module" src="/src/index.js"></script>
+  </body>
+</html>
