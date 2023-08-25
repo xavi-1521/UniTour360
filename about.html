@@ -9,13 +9,11 @@
   </head>
   <body class="w-screen h-screen overflow-x-hidden">
 
-    <section class="relative w-screen h-28">
-      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <section class="relative w-screen h-20">
+      <nav class="absolute z-50 flex justify-between w-full p-2 backdrop-blur-lg bg-slate-900/10">
+        <div class="w-full"><img class="h-16 select-none" src="/logo-white.png" alt="UniTour"></div>
 
-      <nav class="absolute z-50 flex justify-between w-full p-5">
-        <div><img class="w-40 select-none" src="/logo-white.png" alt="UniTour"></div>
-
-        <div class="w-12 h-12">
+        <div class="w-12 h-12 pt-2 pr-2">
           <svg id="menu-open" class="w-full h-full transition duration-300 transform cursor-pointer fill-white stroke-white hover:fill-black/50 hover:stroke-black/50 hover:rotate-[10deg]" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="m11 16.745c0-.414.336-.75.75-.75h9.5c.414 0 .75.336.75.75s-.336.75-.75.75h-9.5c-.414 0-.75-.336-.75-.75zm-9-5c0-.414.336-.75.75-.75h18.5c.414 0 .75.336.75.75s-.336.75-.75.75h-18.5c-.414 0-.75-.336-.75-.75zm4-5c0-.414.336-.75.75-.75h14.5c.414 0 .75.336.75.75s-.336.75-.75.75h-14.5c-.414 0-.75-.336-.75-.75z" fill-rule="nonzero"/>
           </svg>
@@ -27,7 +25,7 @@
       <img class="w-full h-full" src="img/360/banner-about.jpg" alt="Banner">
     </section>
 
-    <article id="menu-options" class="absolute top-0 left-0 z-40 hidden w-screen h-screen bg-black/50">
+    <article id="menu-options" class="fixed top-0 left-0 z-40 hidden w-screen h-screen backdrop-blur-sm bg-black/50">
       <main class="flex items-center justify-center w-full h-full text-white">
         <ul class="flex flex-col gap-5 text-center select-none animate-flip-down animate-once animate-ease-in-out">
           <li>
@@ -95,22 +93,7 @@
       </div>
 
       <div class="w-1/2 rounded-lg bg-slate-400/40 h-96">
-      </div>
-    </section>
-
-    <!-- =================================================================== -->
-
-    <div class="mt-16 text-center">
-      <div class="relative inline-block p-2">
-        <span class="uppercase font-bold text-5xl lg:text-8xl text-black/[0.04] select-none">ACERCA DE</span>
-        <span class="absolute text-2xl lg:text-4xl top-1/3 left-[32%] font-extrabold tracking-tight leading-tight uppercase">Trípode</span>
-      </div>
-    </div>
-
-    <section class="flex w-full h-auto gap-8 px-16 pt-5 my-5">
-      <div class="w-1/2 rounded-lg h-96">
-
-        <div id="default-carousel" class="relative w-full" data-carousel="slide">
+        <div id="camara-carousel" class="relative w-full" data-carousel="slide">
           <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
               <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <img src="img/xxavvi.png" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
@@ -133,12 +116,60 @@
               </div>
           </div>
 
-          <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-              <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+          <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+              <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                  <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                  </svg>
+                  <span class="sr-only">Previous</span>
+              </span>
+          </button>
+
+          <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+              <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                  <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                  </svg>
+                  <span class="sr-only">Next</span>
+              </span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+
+    <div class="mt-16 text-center">
+      <div class="relative inline-block p-2">
+        <span class="uppercase font-bold text-5xl lg:text-8xl text-black/[0.04] select-none">ACERCA DE</span>
+        <span class="absolute text-2xl lg:text-4xl top-1/3 left-[32%] font-extrabold tracking-tight leading-tight uppercase">Trípode</span>
+      </div>
+    </div>
+
+    <section class="flex w-full h-auto gap-8 px-16 pt-5 my-5">
+      <div class="w-1/2 rounded-lg bg-slate-400/40 h-96">
+
+        <div id="tripode-carousel" class="relative w-full" data-carousel="slide">
+          <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/xxavvi.png" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+              </div>
+
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/natha.jpeg" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+              </div>
+
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/cipri.jpg" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+              </div>
+
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/360/banner-about.jpg" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+              </div>
+
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/360/services.jpg" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+              </div>
           </div>
 
           <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
@@ -166,7 +197,7 @@
         <h1 class="mb-10 text-3xl font-extrabold">Especificaciones</h1>
 
         <article>
-          <ul class="flex flex-col gap-8 mt-10">
+          <ul class="flex flex-col gap-8 mt-16">
             <li class="flex gap-3">
               <div class="w-6">
                 <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14 22h-1v-3h1v3zm0-17h-1v-3h1v3zm11-3h1v6h-1v-6zm-8 20h-1v-3h1v3zm1-6h-1.354v-3.889h-1.488v-1c.893-.041 1.701-.201 1.701-1.111h1.141v6zm-1-8h-1v-6h1v6zm3 14h-1v-3h1v3zm0-17h-1v-3h1v3zm3 17h-1v-3h1v3zm0-17h-1v-3h1v3zm3 17h-1v-3h1v3zm1-6.026h-3.922v-.958c1.529-1.491 2.379-2.244 2.389-3.018 0-.462-.268-.717-.754-.717-.453 0-.816.245-1.168.524l-.424-1.148c.545-.453 1.191-.657 1.833-.657 1.179 0 1.941.74 1.941 1.885 0 1.155-.899 2.042-1.722 2.782h1.827v1.307zm2 6.026h-1v-3h1v3zm0-17h-1v-3h1v3z"/></svg>
@@ -186,12 +217,23 @@
               <div class="w-6">
                 <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 0h-10c-1.105 0-2 .896-2 2v15.019c0 3.856 3.145 6.981 7 6.981s7-3.125 7-6.981v-15.019c0-1.104-.896-2-2-2zm-5 3c.553 0 1 .448 1 1 0 .553-.447 1-1 1s-1-.447-1-1c0-.552.447-1 1-1zm0 18c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm2-4c0 1.103-.897 2-2 2s-2-.897-2-2 .897-2 2-2 2 .897 2 2z"/></svg>
               </div>
-              Se dobla como un trípode de sobremesa de interior
+
+              <span>Se dobla como un trípode de sobremesa de interior</span>
+            </li>
+
+            <li class="flex gap-3">
+              <div class="w-6">
+                <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2.033 16.01c.564-1.789 1.632-3.932 1.821-4.474.273-.787-.211-1.136-1.74.209l-.34-.64c1.744-1.897 5.335-2.326 4.113.613-.763 1.835-1.309 3.074-1.621 4.03-.455 1.393.694.828 1.819-.211.153.25.203.331.356.619-2.498 2.378-5.271 2.588-4.408-.146zm4.742-8.169c-.532.453-1.32.443-1.761-.022-.441-.465-.367-1.208.164-1.661.532-.453 1.32-.442 1.761.022.439.466.367 1.209-.164 1.661z"/></svg>
+              </div>
+
+              <span>Selfie Stick Invisible</span>
             </li>
           </ul>
         </article>
       </div>
     </section>
+
+    <!-- =================================================================== -->
 
     <section class="flex flex-col items-center justify-center">
       <span class="w-2/3 mt-10 text-xl text-center text-slate-500">
@@ -204,6 +246,125 @@
         <button data-modal-target="modalDrone" data-modal-toggle="modalDrone" type="button" class="text-gray-900 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 shadow-lg shadow-lime-500/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Drone</button>
       </div>
     </section>
+
+    <!-- =================================================================== -->
+
+    <div class="mt-16 mb-16 text-center">
+      <div class="relative inline-block p-2">
+        <span class="uppercase font-bold text-5xl lg:text-8xl text-black/[0.04] select-none">ACERCA DE</span>
+        <span class="absolute text-2xl lg:text-4xl top-1/3 left-[0%] font-extrabold tracking-tight leading-tight uppercase">Edición de Imágenes y Videos</span>
+      </div>
+    </div>
+
+    <section class="flex w-full h-auto gap-8 px-16 pt-5 my-5">
+      <div class="flex flex-col justify-center w-1/2">
+        <h1 class="mb-10 text-3xl font-extrabold">Adobe Illustrator</h1>
+
+        <p class="mb-5">Es una potente herramienta de diseño gráfico vectorial que te permite crear ilustraciones, gráficos y diseños de alta calidad. <br><br>
+          Este editor de gráficos vectoriales permitió crear contenido para las redes sociales de UniTour360*, editar imágenes 360° y mucho más.</p>
+
+      </div>
+
+      <div class="flex justify-end w-1/2 rounded-lg h-96">
+        <img class="h-full" src="/img/PC_(AI).png" alt="AI">
+      </div>
+    </section>
+
+    <section class="flex w-full h-auto gap-8 px-16 pt-5 my-5">
+      <div class="w-1/2 rounded-lg h-96">
+        <img class="h-full" src="/img/PC_(PS).png" alt="AI">
+      </div>
+
+      <div class="flex flex-col justify-center w-1/2">
+        <h1 class="mb-10 text-3xl font-extrabold">Adobe Photoshop</h1>
+
+        <p class="mb-5">Es una destacada aplicación de edición de imágenes que ofrece un conjunto diverso de herramientas para manipular, retocar y mejorar fotografías y gráficos. Con capacidades avanzadas de ajuste, corrección de color y composición.</p>
+
+      </div>
+    </section>
+
+    <section class="flex w-full h-auto gap-8 px-16 pt-5 my-5">
+      <div class="flex flex-col justify-center w-1/2">
+        <h1 class="mb-10 text-3xl font-extrabold">Wondershare Filmora</h1>
+
+        <p class="mb-5">Es un software de edición de videos que brinda a los usuarios la capacidad de crear y editar videos de manera efectiva. <br><br>
+        Esta herramienta fue utilizada para editar y mejorar los videos capturados con la cámara Insta 360 ONE X2, optimizando la experiencia del recorrido virtual.</p>
+
+      </div>
+
+      <div class="flex justify-end w-1/2 rounded-lg h-96">
+        <img class="h-full" src="/img/PC_(WF).png" alt="AI">
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+
+    <div class="mt-16 mb-5 text-center">
+      <div class="relative inline-block p-2">
+        <span class="uppercase font-bold text-5xl lg:text-8xl text-black/[0.04] select-none">ACERCA DE</span>
+        <span class="absolute text-2xl lg:text-4xl top-1/3 left-[20%] font-extrabold tracking-tight leading-tight uppercase">Edición del Tour</span>
+      </div>
+    </div>
+
+    <section class="flex flex-col items-center justify-center">
+      <div class="w-1/2 mt-5 mb-5">
+        <img class="w-full h-full" src="img/PC_(KUULA).png" alt="Kuula">
+      </div>
+
+      <span class="w-2/3 text-xl text-center text-slate-500">
+        Kuula es una plataforma digital especializada en la creación y presentación de contenido visual en formato 360 grados. Esta herramienta permite a los usuarios cargar, editar y compartir imágenes y videos en 360 grados, lo que brinda la posibilidad de crear recorridos virtuales interactivos y envolventes.
+      </span>
+    </section>
+
+    <section class="flex w-full h-auto gap-8 px-16 pt-5 my-5">
+      <div class="flex justify-end w-3/5 rounded-lg">
+        <img class="w-full" src="/img/360/tour-movil_cuarto.png" alt="AI">
+      </div>
+
+      <div class="flex flex-col justify-center w-2/5">
+        <h1 class="mb-10 text-3xl font-extrabold">Tu Tour en el Movil</h1>
+
+        <p class="mb-5">Explora el tour virtual en tu dispositivo móvil y sumérgete en la experiencia 360° desde la comodidad de tu smartphone o tablet.</p>
+
+      </div>
+    </section>
+
+     <!-- =================================================================== -->
+
+    <div class="mt-16 mb-5 text-center">
+      <div class="relative inline-block p-2">
+        <span class="uppercase font-bold text-5xl lg:text-8xl text-black/[0.04] select-none">ACERCA DE</span>
+        <span class="absolute text-2xl lg:text-4xl top-1/3 left-[8%] font-extrabold tracking-tight leading-tight uppercase">Gafas de Realidad Virtual</span>
+      </div>
+    </div>
+
+    <section class="flex w-full h-auto gap-8 px-16 pt-5 my-5">
+      <div class="flex justify-end w-1/2 rounded-lg h-96">
+        <img class="h-full" src="/img/PC_(WF).png" alt="AI">
+      </div>
+
+      <div class="flex justify-end w-1/2 rounded-lg h-96">
+        <img class="h-full" src="/img/PC_(WF).png" alt="AI">
+      </div>
+    </section>
+
+    <section class="flex flex-col items-center justify-center">
+      <span class="w-2/3 mt-5 text-xl text-center text-slate-500">
+        Vive una experiencia que va más allá de la pantalla y adéntrate en cada rincón de nuestro campus como si estuvieras allí en persona. <br><br>
+        Descubre cómo cada giro de cabeza te transporta a través de nuestros espacios en 360°, brindándote una sensación realista y emocionante.
+      </span>
+
+      <video controls class="w-1/2 mt-10 rounded-lg shadow-lg shadow-slate-600" src="/video/recorrido.mp4"></video>
+    </section>
+
+    <!-- =================================================================== -->
+
+    <div class="mt-16 mb-5 text-center">
+      <div class="relative inline-block p-2">
+        <span class="uppercase font-bold text-5xl lg:text-8xl text-black/[0.04] select-none">ACERCA DE</span>
+        <span class="absolute text-2xl lg:text-4xl top-1/3 left-[25%] font-extrabold tracking-tight leading-tight uppercase">Estadísticas</span>
+      </div>
+    </div>
 
      <!-- =================================================================== -->
      <!--                             MODALES                                 -->
