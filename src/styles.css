@@ -7,13 +7,22 @@
 
 @font-face {
     font-family: 'Minison';
-    src: url('/Minison.ttf') format('truetype');
+    src: url('/font/Minison.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Sequel Sans Black Body';
+  src: url('/font/Sequel Sans Black Body.ttf') format('truetype');
 }
 
 * {
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Comfortaa', system-ui;
 }
 
 .title {
-  font-family: 'Minison', cursive;
+  font-family: 'Minison', system-ui;
+}
+
+.title2 {
+  font-family: 'Sequel Sans Black Body', system-ui;
 }
