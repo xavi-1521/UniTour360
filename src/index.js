@@ -1,5 +1,5 @@
+import Chart from 'chart.js/auto';
 import 'flowbite'
-import ApexCharts from 'apexcharts'
 
 const $ = (element) => {
     return document.querySelector(element)
@@ -24,65 +24,123 @@ menuClose.addEventListener('click', () => {
     if (title) title.style.display = "block";
 })
 
-const chart1 = $('#area-chart-1')
+const ctxChart1 = $('#chart-1')
+const ctxChart2 = $('#chart-2')
+const ctxChart3 = $('#chart-3')
+const ctxChart4 = $('#chart-4')
+const ctxChart5 = $('#chart-5')
+const ctxChart6 = $('#chart-6')
 
-window.addEventListener("load", function() {
-  if (chart1) {
-    const options = {
-      series: [
-        {
-          name: "Usuarios",
-          color: "#1A56DB53",
-          data: [
-            { x: "Fácil", y: 231 },
-            { x: "Normal", y: 122 },
-            { x: "Difícil", y: 63 },
-          ],
-        },
-      ],
-      chart: {
-        type: "bar",
-        toolbar: {
-          show: true,
-        },
-      },
-      plotOptions: {
-        bar: {
-          horizontal: false,
-          borderRadiusApplication: "end",
-          borderRadius: 8,
-        },
-      },
-      grid: {
-        show: false,
-      },
-      dataLabels: {
-        enabled: false,
-      },
-      legend: {
-        show: false,
-      },
-      xaxis: {
-        floating: false,
-        labels: {
-          show: true,
-        },
-        axisBorder: {
-          show: false,
-        },
-        axisTicks: {
-          show: false,
-        },
-      },
-      yaxis: {
-        show: false,
-      },
-      fill: {
-        opacity: 1,
-      },
+new Chart(ctxChart1, {
+  type: 'polarArea',
+  data: {
+    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+    datasets: [{
+      label: '# of Votes',
+      data: [12, 19, 3, 5, 2, 3],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
     }
+  }
+});
 
-    const chart = new ApexCharts(chart1, options);
-    chart.render();
+new Chart(ctxChart2, {
+  type: 'line',
+  data: {
+    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+    datasets: [{
+      label: '# of Votes',
+      data: [12, 19, 3, 5, 2, 3],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
+
+new Chart(ctxChart3, {
+  type: 'bar',
+  data: {
+    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+    datasets: [{
+      label: '# of Votes',
+      data: [12, 19, 3, 5, 2, 3],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
+
+new Chart(ctxChart4, {
+  type: 'radar',
+  data: {
+    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+    datasets: [{
+      label: '# of Votes',
+      data: [12, 19, 3, 5, 2, 3],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
+
+new Chart(ctxChart5, {
+  type: 'doughnut',
+  data: {
+    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+    datasets: [{
+      label: '# of Votes',
+      data: [12, 19, 3, 5, 2, 3],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
+
+new Chart(ctxChart6, {
+  type: 'bar',
+  data: {
+    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+    datasets: [{
+      label: '# of Votes',
+      data: [12, 19, 3, 5, 2, 3],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
   }
 });
