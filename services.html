@@ -1,1 +1,129 @@
-<h1>Servicios</h1>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo-white.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UniTour 360°</title>
+    <link rel="stylesheet" href="/src/styles.css">
+  </head>
+  <body class="w-screen h-screen overflow-x-hidden">
+
+    <section class="relative w-screen h-20">
+      <nav class="absolute z-50 flex justify-between w-full p-2 backdrop-blur-lg bg-slate-900/10">
+        <div class="w-full"><img class="h-16 select-none" src="/logo-white.png" alt="UniTour"></div>
+
+        <div class="w-12 h-12 pt-2 pr-2">
+          <svg id="menu-open" class="w-full h-full transition duration-300 transform cursor-pointer fill-white stroke-white hover:fill-black/50 hover:stroke-black/50 hover:rotate-[10deg]" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="m11 16.745c0-.414.336-.75.75-.75h9.5c.414 0 .75.336.75.75s-.336.75-.75.75h-9.5c-.414 0-.75-.336-.75-.75zm-9-5c0-.414.336-.75.75-.75h18.5c.414 0 .75.336.75.75s-.336.75-.75.75h-18.5c-.414 0-.75-.336-.75-.75zm4-5c0-.414.336-.75.75-.75h14.5c.414 0 .75.336.75.75s-.336.75-.75.75h-14.5c-.414 0-.75-.336-.75-.75z" fill-rule="nonzero"/>
+          </svg>
+
+          <svg id="menu-close" class="hidden w-full h-full transition duration-300 transform cursor-pointer fill-white stroke-white hover:fill-black/50 hover:stroke-black/50 hover:rotate-12" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/></svg>
+        </div>
+      </nav>
+
+      <img class="w-full h-full" src="img/360/banner-about.jpg" alt="Banner">
+    </section>
+
+    <article id="menu-options" class="fixed top-0 left-0 z-40 hidden w-screen h-screen backdrop-blur-sm bg-black/50">
+      <main class="flex items-center justify-center w-full h-full text-white">
+        <ul class="flex flex-col gap-5 text-center select-none animate-flip-down animate-once animate-ease-in-out">
+          <li>
+            <a href="/index.html" class="text-2xl uppercase cursor-pointer hover:text-blue-500">Inicio</a>
+          </li>
+          <li>
+            <a class="text-2xl uppercase cursor-pointer hover:text-blue-500">Acerca de</a>
+          </li>
+          <li>
+            <a href="/services.html" class="text-2xl uppercase cursor-pointer hover:text-blue-500">Servicios</a>
+          </li>
+          <li>
+            <a href="/tour.html" class="text-2xl uppercase cursor-pointer hover:text-blue-500">Tour</a>
+          </li>
+          <li>
+            <a href="/devs.html" class="text-2xl uppercase cursor-pointer hover:text-blue-500">Desarrolladores</a>
+          </li>
+        </ul>
+      </main>
+    </article>
+
+    <!-- =================================================================== -->
+    <section class="relative w-screen h-72">
+      <div class="absolute top-0 w-full h-full opacity-75 bg-gradient-to-b from-transparent to-white/50"></div>
+
+      <div class="absolute flex items-center justify-center w-3/4 gap-5 inset-x-36 inset-y-40 h-60">
+        <div class="flex items-center justify-center h-full border-2 rounded-lg w-80 bg-white/60 backdrop-blur-lg">
+          text
+        </div>
+
+        <div class="flex items-center justify-center h-full border-2 rounded-lg w-80 bg-white/60 backdrop-blur-lg">
+          text 1
+        </div>
+
+        <div class="flex items-center justify-center h-full border-2 rounded-lg w-80 bg-white/60 backdrop-blur-lg">
+          text 2
+        </div>
+      </div>
+
+      <img src="/img/360/banner-index.jpg" alt="Imagen" class="object-cover w-full h-full">
+    </section>
+
+    <div class="text-center mt-44">
+      <div class="relative inline-block p-2">
+        <span class="uppercase font-bold text-5xl lg:text-8xl text-black/[0.04] select-none">SERVICIOS</span>
+        <span class="absolute text-2xl lg:text-4xl top-1/3 left-[28%] font-extrabold tracking-tight leading-tight uppercase">Contáctanos</span>
+      </div>
+    </div>
+
+     <!-- =================================================================== -->
+
+     <section class="flex">
+      <div class="w-1/2 p-8">
+        <form id="send-email" class="p-8 w-full rounded-lg backdrop-blur-sm bg-slate-600/[0.09]">
+          <div class="relative z-0 w-full mb-6 group">
+            <input type="text" name="floating_first_name" id="name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+            <label for="floating_first_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nombre</label>
+          </div>
+          <div class="relative z-0 w-full mb-6 group">
+              <input type="email" name="floating_email" id="email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+              <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Correo</label>
+          </div>
+          <div class="relative z-0 w-full mb-6 mt-7 group">
+            <select name="floating_email" id="option-email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required>
+              <option value="">Seleccione...</option>
+              <option value="Diseño (Poster, Flayer, etc...)">Diseño (Poster, Flayer, etc...)</option>
+              <option value="Fotografía 360°">Fotografía 360°</option>
+              <option value="Tour">Tour</option>
+              <option value="Página Web">Página Web</option>
+              <option value="Opinión, Queja o Reclamo">Opinión, Queja o Reclamo</option>
+            </select>
+            <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Opciones</label>
+          </div>
+          <div class="relative z-0 w-full mb-6 group">
+            <textarea rows="5" type="email" name="floating_email" id="description-email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required></textarea>
+            <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Escribe brevemente tu consulta...</label>
+          </div>
+
+          <button type="submit" class="text-white bg-slate-600 hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm w-full px-5 py-2.5 text-center">Enviar</button>
+        </form>
+      </div>
+
+      <div class="w-1/2 p-8 pr-16">
+        <h1 class="mt-10 text-4xl font-extrabold mb-11">Ponte en contacto</h1>
+        <p class="text-justify">¡Hola!, en este espacio tienes la oportunidad de expresar de manera breve tus requerimientos, preguntas, inquietudes o comentarios. Por favor, selecciona una de las opciones disponibles y te responderemos lo más pronto posible. ¡Gracias por visitar UniTour360!</p>
+
+        <div class="flex items-center justify-center gap-5 mt-20">
+          <div class="w-16 h-16 p-3 border-4 rounded-full cursor-pointer border-slate-800 hover:border-slate-400">
+            <svg class="w-full h-full fill-slate-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </div>
+
+          <div class="w-16 h-16 p-3 border-4 rounded-full cursor-pointer border-slate-800 hover:border-slate-400 hover:fill-slate-400">
+            <svg class="w-full h-full fill-slate-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+          </div>
+        </div>
+      </div>
+     </section>
+
+    <script type="module" src="/src/index.js"></script>
+  </body>
+</html>
