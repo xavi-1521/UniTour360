@@ -1,14 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-@font-face {
-    font-family: 'Minison';
-    src: url('/font/Minison.ttf') format('truetype');
-}
 
 @font-face {
   font-family: 'Sequel Sans Black Body';
@@ -16,11 +11,11 @@
 }
 
 * {
-    font-family: 'Comfortaa', system-ui;
+  font-family: 'Comfortaa', system-ui;
 }
 
 .title {
-  font-family: 'Minison', system-ui;
+  font-family: 'Lilita One', cursive;
 }
 
 .title2 {
