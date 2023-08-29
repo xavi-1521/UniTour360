@@ -11,7 +11,9 @@
 
     <section class="relative w-screen h-20">
       <nav class="absolute z-50 flex justify-between w-full p-2 backdrop-blur-lg bg-slate-900/40">
-        <div class="w-full"><img class="h-16 select-none" src="/logo-white.png" alt="UniTour"></div>
+        <div class="w-full">
+          <a href="/index.html"><img class="h-16 select-none" src="/logo-white.png" alt="UniTour"></a>
+        </div>
 
         <div class="w-12 h-12 pt-2 pr-2">
           <svg id="menu-open" class="w-full h-full transition duration-300 transform cursor-pointer fill-white stroke-white hover:fill-black/50 hover:stroke-black/50 hover:rotate-[10deg]" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -189,6 +191,51 @@
         </p>
       </div>
     </section>
+
+    <footer class="flex flex-col items-center w-full h-auto mt-10 text-white bg-black">
+
+      <div class="flex items-center justify-between w-full px-16">
+        <div class="flex items-center justify-start h-full py-5 select-none">
+          <img class="h-16 w-36" src="/logo-white.png" alt="">
+        </div>
+
+        <div class="text-sm text-white/40 w-[360px]">
+          <ul class="flex gap-5">
+            <li><a href="/index.html" class="hover:text-white" href="">Inicio</a></li>
+            <li><a href="/about.html" class="hover:text-white" href="">Acerca de</a></li>
+            <li><a href="/services.html" class="hover:text-white" href="">Servicios</a></li>
+            <li><a href="/devs.html" class="hover:text-white" href="">Desarrolladores</a></li>
+          </ul>
+        </div>
+
+        <div class="flex items-center justify-center gap-2 w-[355px]">
+          <div class="relative w-full">
+              <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                  <svg class="w-4 h-4 text-gray-500 fill-white dark:text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.971l-11.986 9.713zm-5.425-1.822l-6.575-5.329v12.501l6.575-7.172zm10.85 0l6.575 7.172v-12.501l-6.575 5.329zm-1.557 1.261l-3.868 3.135-3.868-3.135-8.11 8.848h23.956l-8.11-8.848z"/></svg>
+              </div>
+
+              <input readonly type="search" id="default-search" class="block w-full p-4 pl-10 text-sm placeholder-gray-400 bg-gray-700 border border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Search Mockups, Logos..." value="unitour360@gmail.com" required>
+              <a href="mailto:unitour360@gmail.com?subject=Servicios%20UniTour360°&body=¡Hola,%20estoy%20interesado%20en%20tus%20servicios!" type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Enviar correo</a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="w-[90%] border-white/20 border-1">
+
+      <div class="flex justify-between w-full px-16 py-10">
+        <span class="text-sm text-white/40">© Copyright 2023 todos los derechos reservados</span>
+
+        <div class="flex items-center justify-center gap-5">
+          <div class="w-6 h-6">
+            <svg class="w-full h-full cursor-pointer text-white/40 fill-white/40 stroke-white/40 hover:fill-slate-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </div>
+
+          <div class="w-6 h-6">
+            <svg class="w-full h-full cursor-pointer text-white/40 fill-white/40 stroke-white/40 hover:fill-slate-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script defer type="module" src="/src/index.js"></script>
   </body>
