@@ -1,1 +1,237 @@
-<h1>Desarrollo</h1>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo-white.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UniTour 360°</title>
+    <link rel="stylesheet" href="/src/styles.css">
+  </head>
+  <body class="w-screen h-screen overflow-x-hidden">
+
+    <section class="relative w-screen h-20">
+      <nav class="absolute z-50 flex justify-between w-full p-2 backdrop-blur-lg bg-slate-900/40">
+        <div class="w-full">
+          <a href="/index.html"><img class="h-16 select-none" src="/logo-white.png" alt="UniTour"></a>
+        </div>
+
+        <div class="w-12 h-12 pt-2 pr-2">
+          <svg id="menu-open" class="w-full h-full transition duration-300 transform cursor-pointer fill-white stroke-white hover:fill-black/50 hover:stroke-black/50 hover:rotate-[10deg]" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="m11 16.745c0-.414.336-.75.75-.75h9.5c.414 0 .75.336.75.75s-.336.75-.75.75h-9.5c-.414 0-.75-.336-.75-.75zm-9-5c0-.414.336-.75.75-.75h18.5c.414 0 .75.336.75.75s-.336.75-.75.75h-18.5c-.414 0-.75-.336-.75-.75zm4-5c0-.414.336-.75.75-.75h14.5c.414 0 .75.336.75.75s-.336.75-.75.75h-14.5c-.414 0-.75-.336-.75-.75z" fill-rule="nonzero"/>
+          </svg>
+
+          <svg id="menu-close" class="hidden w-full h-full transition duration-300 transform cursor-pointer fill-white stroke-white hover:fill-black/50 hover:stroke-black/50 hover:rotate-12" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/></svg>
+        </div>
+      </nav>
+
+      <img class="w-full h-full" src="img/360/banner-about.jpg" alt="Banner">
+    </section>
+
+    <article id="menu-options" class="fixed top-0 left-0 z-40 hidden w-screen h-screen backdrop-blur-sm bg-black/50">
+      <main class="flex items-center justify-center w-full h-full text-white">
+        <ul class="flex flex-col gap-5 text-center select-none animate-flip-down animate-once animate-ease-in-out">
+          <li>
+            <a href="/index.html" class="text-2xl uppercase cursor-pointer hover:text-blue-500">Inicio</a>
+          </li>
+          <li>
+            <a href="/about.html" class="text-2xl uppercase cursor-pointer hover:text-blue-500">Acerca de</a>
+          </li>
+          <li>
+            <a href="/services.html" class="text-2xl uppercase cursor-pointer hover:text-blue-500">Servicios</a>
+          </li>
+          <li>
+            <a href="/tour.html" class="text-2xl uppercase cursor-pointer hover:text-blue-500">Tour</a>
+          </li>
+          <li>
+            <a class="text-2xl uppercase cursor-pointer hover:text-blue-500">Desarrolladores</a>
+          </li>
+        </ul>
+      </main>
+    </article>
+
+    <!-- =================================================================== -->
+
+    <section class="flex p-5">
+      <div class="w-2/3 p-5">
+        <div class="flex items-center">
+          <img class="object-cover rounded-full w-28 h-28" src="/img/natha/nata1.jpeg" alt="Natalia">
+          <div class="ml-5">
+            <div class="flex items-center justify-center">
+              <h2 class="text-2xl font-extrabold">Natalia Rodríguez Urrutia</h2>
+              <span class="px-2 py-1 ml-2 text-sm text-white rounded-lg bg-slate-500/60">NataGameplay</span>
+            </div>
+
+            <span class="inline-block w-auto p-2 mt-2 text-sm rounded-lg bg-cyan-300">Fotografía, Diseño y Página Web</span>
+          </div>
+        </div>
+
+        <hr class="mt-5 w-[95%]">
+
+        <article>
+          <h2 class="mt-4 text-xl font-extrabold">Biografía</h2>
+
+          <span class="block mt-4"><strong>Thu manquiita kawaii UwU.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis rerum suscipit quia cum sed. Aliquid, maxime in ullam, corrupti voluptatum vel doloremque aspernatur iure amet eos nostrum eaque alias distinctio facilis labore officiis necessitatibus ab, delectus cum! Minus nostrum numquam pariatur eveniet.</span>
+        </article>
+
+        <article>
+          <h2 class="mt-4 text-xl font-extrabold">Redes Sociales</h2>
+
+          <span class="flex gap-3 p-2 mt-2">
+            <a target="_blank" href="https://www.youtube.com/@natagameplay4271">
+              <svg class="w-12 h-12 hover:fill-red-300 fill-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.441 16.892c-2.102.144-6.784.144-8.883 0-2.276-.156-2.541-1.27-2.558-4.892.017-3.629.285-4.736 2.558-4.892 2.099-.144 6.782-.144 8.883 0 2.277.156 2.541 1.27 2.559 4.892-.018 3.629-.285 4.736-2.559 4.892zm-6.441-7.234l4.917 2.338-4.917 2.346v-4.684z"/></svg>
+            </a>
+
+            <a target="_blank" href="https://www.instagram.com/xnatagameplayx/">
+              <svg class="w-12 h-12 hover:fill-black/30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.829 6.302c-.738-.034-.96-.04-2.829-.04s-2.09.007-2.828.04c-1.899.087-2.783.986-2.87 2.87-.033.738-.041.959-.041 2.828s.008 2.09.041 2.829c.087 1.879.967 2.783 2.87 2.87.737.033.959.041 2.828.041 1.87 0 2.091-.007 2.829-.041 1.899-.086 2.782-.988 2.87-2.87.033-.738.04-.96.04-2.829s-.007-2.09-.04-2.828c-.088-1.883-.973-2.783-2.87-2.87zm-2.829 9.293c-1.985 0-3.595-1.609-3.595-3.595 0-1.985 1.61-3.594 3.595-3.594s3.595 1.609 3.595 3.594c0 1.985-1.61 3.595-3.595 3.595zm3.737-6.491c-.464 0-.84-.376-.84-.84 0-.464.376-.84.84-.84.464 0 .84.376.84.84 0 .463-.376.84-.84.84zm-1.404 2.896c0 1.289-1.045 2.333-2.333 2.333s-2.333-1.044-2.333-2.333c0-1.289 1.045-2.333 2.333-2.333s2.333 1.044 2.333 2.333zm-2.333-12c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.958 14.886c-.115 2.545-1.532 3.955-4.071 4.072-.747.034-.986.042-2.887.042s-2.139-.008-2.886-.042c-2.544-.117-3.955-1.529-4.072-4.072-.034-.746-.042-.985-.042-2.886 0-1.901.008-2.139.042-2.886.117-2.544 1.529-3.955 4.072-4.071.747-.035.985-.043 2.886-.043s2.14.008 2.887.043c2.545.117 3.957 1.532 4.071 4.071.034.747.042.985.042 2.886 0 1.901-.008 2.14-.042 2.886z"/></svg>
+            </a>
+
+            <a target="_blank" href="https://www.linkedin.com/in/natalia-rodriguez-836b99272/">
+              <svg class="w-12 h-12 fill-blue-500 hover:fill-blue-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/></svg>
+            </a>
+          </span>
+        </article>
+
+        <article>
+          <h2 class="mt-5 text-xl font-extrabold">Ubicación</h2>
+
+          <span class="flex items-center mt-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-3 mr-2" viewBox="0 0 24 24"><path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/></svg>
+
+            Bogotá D.C / Barrancabermeja
+          </span>
+        </article>
+
+        <article>
+          <h2 class="mt-5 text-xl font-extrabold">Títulos</h2>
+
+          <span class="flex items-center mt-2">
+            <svg class="w-4 h-4 ml-3 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12.875v5.068c0 2.754-5.789 4.057-9 4.057-3.052 0-9-1.392-9-4.057v-6.294l9 4.863 9-3.637zm-8.083-10.875l-12.917 5.75 12 6.5 11-4.417v7.167h2v-8.25l-12.083-6.75zm13.083 20h-4c.578-1 1-2.5 1-4h2c0 1.516.391 2.859 1 4z"/></svg>
+
+            Bachiller Técnico
+          </span>
+        </article>
+
+        <article>
+          <button type="button" class="text-white texr-centee mt-5 bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-full text-sm px-5 py-2.5 text-center w-40">Ver más</button>
+        </article>
+      </div>
+
+      <div class="flex flex-col w-1/3 gap-4 p-5 px-8 rounded-lg bg-yellow-200/40 backdrop-blur-lg drop-shadow-lg">
+        <article>
+          <h2 class="mt-4 text-xl font-extrabold text-center">Correo Personal</h2>
+          <span class="flex items-center justify-center p-2 mt-2 text-center rounded-lg bg-slate-300/80">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 ml-3 mr-2 fill-black/60"  viewBox="0 0 24 24"><path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"/></svg>
+
+            natalia2002.nru@gmail.com
+          </span>
+        </article>
+
+        <article>
+          <h2 class="mt-4 text-xl font-extrabold text-center">Teléfono</h2>
+
+          <span class="flex items-center justify-center p-2 mt-2 text-center rounded-lg bg-slate-300/80">
+            <svg class="w-6 h-6 ml-3 mr-2 fill-black/60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3.445 17.827c-3.684 1.684-9.401-9.43-5.8-11.308l1.053-.519 1.746 3.409-1.042.513c-1.095.587 1.185 5.04 2.305 4.497l1.032-.505 1.76 3.397-1.054.516z"/></svg>
+
+            +57 315 316 5381
+          </span>
+        </article>
+
+        <article>
+          <h2 class="mt-4 text-xl font-extrabold">Habilidades</h2>
+
+          <span class="block mt-2">
+            <svg class="w-6 h-6 ml-3 mr-2 fill-black/60" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M15.517 24h-11.646c.522-3.035.897-6.162-.422-8.028-1.666-2.357-2.43-4.742-2.449-6.883-.045-5.19 4.231-9.114 10.203-9.089 7.236.03 9.328 6.156 9.773 7.943.34 1.369-.898 1.869-.166 2.702.596.679 1.035 1.364 1.789 2.177.292.315.405.646.401.943-.006.434-.291.798-.748.958-.429.15-.76.32-1.215.443-.145 1.16-.521 2.572-.798 3.557-.737 2.62-2.896 1.059-3.881 2.607-.426.668-.64 1.738-.841 2.67zm-4.293-8.316c.117-.001.23-.04.307-.109l.594-.391h-2.25l.594.391c.077.069.19.109.308.109h.447zm.922-1c.138-.001.25-.112.25-.25s-.112-.25-.25-.25h-2.279c-.138 0-.25.112-.25.25s.112.25.25.25h2.279zm.247-1c0-2.003 1.607-2.83 1.607-4.614 0-1.86-1.501-2.886-3.001-2.886s-2.999 1.024-2.999 2.886c0 1.784 1.607 2.639 1.607 4.614h2.786zm2.477-3.615l1.349.612-.413.911-1.299-.588c.151-.3.276-.608.363-.935zm-7.739 0c.087.332.208.631.36.935l-1.296.588-.414-.911 1.35-.612zm9.369-.885v-1h-1.594c.073.327.103.665.093 1h1.501zm-9.498 0v-.003c-.01-.334.02-.67.092-.997h-1.594v1h1.502zm7.02-2.714l1.242-.882.579.816-1.252.888c-.146-.291-.336-.566-.569-.822zm-6.044-.001c-.23.252-.418.525-.569.823l-1.251-.888.578-.816 1.242.881zm4.435-1.046l.663-1.345.897.443-.664 1.345c-.278-.184-.58-.332-.896-.443zm-2.826-.001c-.315.11-.618.258-.897.442l-.663-1.343.897-.443.663 1.344zm1.913-.208c-.334-.039-.654-.041-1-.001v-1.529h1v1.53z"/></svg>
+          </span>
+        </article>
+
+        <article>
+          <h2 class="mt-4 text-xl font-extrabold text-center">Idiomas</h2>
+
+          <span class="flex items-center justify-center p-2 mt-2 text-center rounded-lg bg-slate-300/80">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 ml-3 mr-2 fill-black/60" viewBox="0 0 24 24"><path d="M14.748 11.191c.03.473.084.909.158 1.298-.998.183-1.038-.801-.158-1.298zm-7.461.274h1.708l-.856-2.451-.852 2.451zm16.713-.458c0 6.052-6.732 11.705-15.968 9.458-1.678 1.027-5.377 2.065-7.978 2.535.971-1.912 2.048-4.538 1.993-6.368-1.308-1.562-2.047-3.575-2.047-5.625 0-5.781 5.662-10.007 12-10.007 6.299 0 12 4.195 12 10.007zm-12.749 2.993l-2.47-6.5h-1.302l-2.479 6.5h1.392l.535-1.5h2.438l.537 1.5h1.349zm6.837-3.937c.062-.243.1-.426.135-.605l-1.1-.214-.109.5c-.371-.054-.767-.061-1.166-.021.009-.268.025-.531.049-.784h1.229v-1.042h-1.081c.054-.265.099-.424.144-.575l-1.075-.322c-.079.263-.145.521-.211.897h-1.226v1.042h1.092c-.028.337-.046.686-.051 1.038-1.206.443-1.718 1.288-1.718 2.053 0 .904.714 1.7 1.842 1.598 1.401-.128 2.337-1.186 2.885-2.487.567.327.805.876.591 1.385-.197.471-.78.919-1.892.896v1.121c1.234.019 2.448-.45 2.925-1.583.464-1.107-.067-2.317-1.263-2.897zm-2.144 1.841c.293-.303.522-.688.697-1.075-.253-.021-.522-.014-.79.021.017.378.048.731.093 1.054z"/></svg>
+
+            Español
+          </span>
+        </article>
+
+      </div>
+    </section>
+
+    <div class="flex justify-center w-full">
+      <hr class="w-[95%]">
+    </div>
+
+    <section class="flex p-5">
+      <div class="flex flex-col w-1/3 gap-4 p-5 rounded-lg backdrop-blur-lg drop-shadow-lg bg-slate-600/30">
+        <article>
+          <h2 class="mt-4 text-xl font-extrabold">Redes Sociales</h2>
+
+          <span class="block mt-2">Lorem ipsum dolor sit amet consectetur</span>
+        </article>
+
+        <article>
+          <h2 class="mt-4 text-xl font-extrabold">Redes Sociales</h2>
+
+          <span class="block mt-2">Lorem ipsum dolor sit amet consectetur</span>
+        </article>
+
+        <article>
+          <h2 class="mt-4 text-xl font-extrabold">Redes Sociales</h2>
+
+          <span class="block mt-2">Lorem ipsum dolor sit amet consectetur</span>
+        </article>
+
+        <article>
+          <h2 class="mt-4 text-xl font-extrabold">Redes Sociales</h2>
+
+          <span class="block mt-2">Lorem ipsum dolor sit amet consectetur</span>
+        </article>
+
+      </div>
+
+      <div class="flex flex-col items-end justify-end w-2/3 p-5">
+        <div class="flex items-center justify-end">
+          <div class="flex flex-col items-end justify-end mr-5">
+            <div class="flex items-end justify-center">
+              <span class="px-2 py-1 mr-2 text-white rounded-lg bg-slate-500">XxaVvi</span>
+              <h2 class="font-extrabold text-1xl">Nathagameplay 777</h2>
+            </div>
+
+            <span class="inline-block w-auto p-2 mt-2 text-sm rounded-lg text-end bg-cyan-300">Streamer de LOL</span>
+          </div>
+          <img class="object-cover rounded-full w-28 h-28" src="/img/xxavvi.png" alt="Natalia">
+        </div>
+
+        <article>
+          <h2 class="mt-4 text-xl font-extrabold text-end">Biografía</h2>
+
+          <span class="block mt-4 text-end">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis rerum suscipit quia cum sed. Aliquid, maxime in ullam, corrupti voluptatum vel doloremque aspernatur iure amet eos nostrum eaque alias distinctio facilis labore officiis necessitatibus ab, delectus cum! Minus nostrum numquam pariatur eveniet.</span>
+        </article>
+
+        <article>
+          <h2 class="mt-4 text-xl font-extrabold text-end">Redes Sociales</h2>
+
+          <span class="block mt-2">Lorem ipsum dolor sit amet consectetur</span>
+        </article>
+
+        <article>
+          <h2 class="mt-5 text-xl font-extrabold text-end">Ubicación</h2>
+
+          <span class="block mt-2">Lorem ipsum dolor sit amet consectetur</span>
+        </article>
+
+        <article>
+          <h2 class="mt-5 text-xl font-extrabold text-end">Títulos</h2>
+
+          <span class="block mt-2">Lorem ipsum dolor sit amet consectetur</span>
+        </article>
+
+        <article>
+          <button type="button" class="text-white texr-centee mt-5 bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-full text-sm px-5 py-2.5 text-center w-40">Ver más</button>
+        </article>
+      </div>
+    </section>
+
+    <script type="module" src="/src/index.js"></script>
+  </body>
+</html>
