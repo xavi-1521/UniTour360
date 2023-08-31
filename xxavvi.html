@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo-white.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UniTour 360°</title>
+    <link rel="stylesheet" href="/src/styles.css">
+  </head>
+  <body class="w-screen h-screen overflow-x-hidden">
+
+    <section class="relative w-screen h-20">
+      <nav class="absolute z-50 flex justify-between w-full p-2 backdrop-blur-lg bg-slate-900/40">
+        <div class="w-full">
+          <a href="/index.html"><img class="h-16 select-none" src="/logo-white.png" alt="UniTour"></a>
+        </div>
+
+        <div class="w-12 h-12 pt-2 pr-2">
+          <svg id="menu-open" class="w-full h-full transition duration-300 transform cursor-pointer fill-white stroke-white hover:fill-black/50 hover:stroke-black/50 hover:rotate-[10deg]" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="m11 16.745c0-.414.336-.75.75-.75h9.5c.414 0 .75.336.75.75s-.336.75-.75.75h-9.5c-.414 0-.75-.336-.75-.75zm-9-5c0-.414.336-.75.75-.75h18.5c.414 0 .75.336.75.75s-.336.75-.75.75h-18.5c-.414 0-.75-.336-.75-.75zm4-5c0-.414.336-.75.75-.75h14.5c.414 0 .75.336.75.75s-.336.75-.75.75h-14.5c-.414 0-.75-.336-.75-.75z" fill-rule="nonzero"/>
+          </svg>
+
+          <svg id="menu-close" class="hidden w-full h-full transition duration-300 transform cursor-pointer fill-white stroke-white hover:fill-black/50 hover:stroke-black/50 hover:rotate-12" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/></svg>
+        </div>
+      </nav>
+
+      <img class="w-full h-full" src="img/360/banner-about.jpg" alt="Banner">
+    </section>
+
+    <article id="menu-options" class="fixed top-0 left-0 z-40 hidden w-screen h-screen backdrop-blur-sm bg-black/50">
+      <main class="flex items-center justify-center w-full h-full text-white">
+        <ul class="flex flex-col gap-5 text-center select-none animate-flip-down animate-once animate-ease-in-out">
+          <li>
+            <a href="/index.html" class="text-2xl uppercase cursor-pointer hover:text-blue-500">Inicio</a>
+          </li>
+          <li>
+            <a href="/about.html" class="text-2xl uppercase cursor-pointer hover:text-blue-500">Acerca de</a>
+          </li>
+          <li>
+            <a href="/services.html" class="text-2xl uppercase cursor-pointer hover:text-blue-500">Servicios</a>
+          </li>
+          <li>
+            <a href="/tour.html" class="text-2xl uppercase cursor-pointer hover:text-blue-500">Tour</a>
+          </li>
+          <li>
+            <a href="/devs.html" class="text-2xl uppercase cursor-pointer hover:text-blue-500">Desarrolladores</a>
+          </li>
+        </ul>
+      </main>
+    </article>
+
+    <!-- =================================================================== -->
+
+    <section class="flex w-screen h-screen">
+      <div class="relative w-1/3">
+        <div class="absolute z-10 inset-y-4 inset-x-[-25rem] h-screen w-[50rem]">
+          <img class="object-cover w-full h-full rounded-full animate-shake animate-infinite animate-duration-[5000ms]" src="/img/xxavvi/notengomasfotos.jpeg" alt="">
+        </div>
+      </div>
+
+      <div class="z-10 flex flex-col items-center justify-center w-2/3">
+        <span class="font-extrabold text-transparent text-7xl bg-clip-text bg-gradient-to-r from-purple-400 title to-pink-600 animate-jump-in animate-once animate-duration-[2000ms]">Javier Alejandro</span>
+        <span class="font-extrabold text-transparent text-7xl bg-clip-text bg-gradient-to-r from-purple-400 title to-pink-600 animate-jump-in animate-once animate-duration-[2000ms]">Rodríguez Arciniegas</span>
+
+        <span class="mt-8 text-4xl font-extrabold text-black/80 title">Ingeniero Informático</span>
+      </div>
+
+      <img class="absolute inset-0 opacity-30" src="/img/xxavvi/fondo.png" alt="">
+    </section>
+
+    <!-- =================================================================== -->
+
+    <section>
+      <div class="mt-16 text-center">
+        <div class="relative inline-block p-2">
+          <span class="uppercase font-bold text-5xl lg:text-8xl text-black/[0.04] select-none">Javier</span>
+          <span class="absolute text-2xl lg:text-4xl top-1/3 left-[27%] font-extrabold tracking-tight leading-tight uppercase">Sobre Mi</span>
+        </div>
+      </div>
+
+      <article class="flex items-center justify-center">
+        <div class="w-[80%] mt-7 text-center text-2xl">
+          Desde pequeño experimenté una gran pasión por las computadoras e informática. Esa pasión me llevó a estudiar algo relacionado con el tema. Gracias a esta trayectoria y al invaluable apoyo de las personas que han sido parte de mi vida hasta el día de hoy, pude convertirme en un joven con metas cumplidas y muchos sueños por cumplir. Para esas personas que estuvieron presentes, simplemente gracias por acompañar el proceso.
+          <br><br>
+          <strong>“Creo que mientras más extraña es la vida, más sentido tiene.”</strong>
+        </div>
+      </article>
+    </section>
+
+    <section class="relative">
+      <div class="absolute inset-0 z-10 flex items-center justify-center">
+        <img class="w-96 drop-shadow-xl" src="/img/xxavvi/fotox.png" alt="">
+      </div>
+
+      <img class="object-cover mt-5 w-full h-[30rem] backdrop-blur-sm opacity-30" src="/img/xxavvi/fondo-javier.jpg" alt="Foto">
+    </section>
+
+    <!-- =================================================================== -->
+
+    <section class="flex items-center justify-center w-full h-auto gap-8 px-16 pt-5 my-5">
+      <div class="w-1/2 mr-16">
+        <h1 class="mb-10 text-3xl font-extrabold text-center">JORNADA DE DIVULGACIÓN DE RESULTADOS / 2022</h1>
+
+        <p class="mb-5 text-center">El proyecto UNIMAPZ participó en la jornada de divulgación de resultados de investigación, creación e innovación del Instituto Universitario de la Paz – UNIPAZ, el cual fue clasificado para ser presentado en la ciudad de Bucaramanga.</p>
+      </div>
+
+      <div class="w-1/2 rounded-lg bg-gradient-to-t from-slate-300 via-slate-200 to-slate-500 h-96">
+        <div id="divulgacion-carousel" class="relative w-full" data-carousel="slide">
+          <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/natha/unipaz1.jpeg" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 rounded-lg top-1/2 left-1/2" alt="...">
+              </div>
+
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/natha/unipaz2.jpeg" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 rounded-lg top-1/2 left-1/2" alt="...">
+              </div>
+
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/natha/unipaz3.jpeg" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 rounded-lg top-1/2 left-1/2" alt="...">
+              </div>
+          </div>
+
+          <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+              <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                  <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                  </svg>
+                  <span class="sr-only">Previous</span>
+              </span>
+          </button>
+
+          <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+              <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                  <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                  </svg>
+                  <span class="sr-only">Next</span>
+              </span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+
+    <section class="flex items-center justify-center w-full h-auto gap-8 px-16 pt-5 my-5 mt-16">
+      <div class="w-1/2 rounded-lg bg-gradient-to-t from-slate-300 via-slate-200 to-slate-500 h-96">
+        <div id="divulgacion-carousel" class="relative w-full" data-carousel="slide">
+          <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/natha/unipaz1.jpeg" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 rounded-lg top-1/2 left-1/2" alt="...">
+              </div>
+
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/natha/unipaz2.jpeg" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 rounded-lg top-1/2 left-1/2" alt="...">
+              </div>
+
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/natha/unipaz3.jpeg" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 rounded-lg top-1/2 left-1/2" alt="...">
+              </div>
+          </div>
+
+          <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+              <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                  <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                  </svg>
+                  <span class="sr-only">Previous</span>
+              </span>
+          </button>
+
+          <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+              <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                  <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                  </svg>
+                  <span class="sr-only">Next</span>
+              </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="w-1/2 mr-16">
+        <h1 class="mb-10 text-3xl font-extrabold text-center">JORNADA DE DIVULGACIÓN DE RESULTADOS / 2022</h1>
+
+        <p class="mb-5 text-center">El proyecto UNIMAPZ participó en la jornada de divulgación de resultados de investigación, creación e innovación del Instituto Universitario de la Paz – UNIPAZ, el cual fue clasificado para ser presentado en la ciudad de Bucaramanga.</p>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+
+    <section>
+      <div class="mt-16 text-center">
+        <div class="relative inline-block p-2">
+          <span class="uppercase font-bold text-5xl lg:text-8xl text-black/[0.04] select-none">Javier Rodríguez</span>
+          <span class="absolute text-2xl lg:text-4xl top-1/3 left-[28%] font-extrabold tracking-tight leading-tight uppercase">Experiencia Unitour 360</span>
+        </div>
+      </div>
+
+      <article class="flex items-center justify-center">
+        <div class="w-[80%] mt-7 text-center text-2xl">
+          Trabajar en el proyecto UniTour 360 ha sido una experiencia gratificante y enriquecedora. A través de este desafío, he adquirido habilidades valiosas en la creación de recorrido virtuales, toma de fotografías 360°, diseño gráfico y documentación de un proyecto. Tengo la oportunidad de colaborar con una excelente compañera, lo que ha fortalecido mis habilidades de trabajo en grupo y comunicación.
+          <br><br>
+          Gracias a este proyecto he vivido bonitas experiencias y he participado de múltiples eventos.
+          <br><br>
+        </div>
+      </article>
+    </section>
+
+    <section class="flex items-center justify-center w-full h-auto gap-8 px-16 pt-5 my-5">
+      <div class="w-1/2 rounded-lg bg-gradient-to-t from-slate-300 via-slate-200 to-slate-500 h-96">
+        <div id="divulgacion-carousel" class="relative w-full" data-carousel="slide">
+          <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/xxavvi/w1.jpeg" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 rounded-lg top-1/2 left-1/2" alt="...">
+              </div>
+
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/xxavvi/w2.jpg" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 rounded-lg top-1/2 left-1/2" alt="...">
+              </div>
+
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/xxavvi/w3.jpeg" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 rounded-lg top-1/2 left-1/2" alt="...">
+              </div>
+
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/xxavvi/w4.jpeg" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 rounded-lg top-1/2 left-1/2" alt="...">
+              </div>
+
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="img/natha/lab3.jpg" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 rounded-lg top-1/2 left-1/2" alt="...">
+              </div>
+          </div>
+
+          <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+              <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                  <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                  </svg>
+                  <span class="sr-only">Previous</span>
+              </span>
+          </button>
+
+          <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+              <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                  <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                  </svg>
+                  <span class="sr-only">Next</span>
+              </span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+
+    <footer class="flex flex-col items-center w-full h-auto mt-10 text-white bg-black">
+
+      <div class="flex items-center justify-between w-full px-16">
+        <div class="flex items-center justify-start h-full py-5 select-none">
+          <img class="h-16 w-36" src="/logo-white.png" alt="">
+        </div>
+
+        <div class="text-sm text-white/40 w-[350px]">
+          <ul class="flex gap-5">
+            <li><a href="/index.html" class="hover:text-white" href="">Inicio</a></li>
+            <li><a href="/about.html" class="hover:text-white" href="">Acerca de</a></li>
+            <li><a href="/tour.html" class="hover:text-white" href="">Tour</a></li>
+            <li><a href="/devs.html" class="hover:text-white" href="">Desarrolladores</a></li>
+          </ul>
+        </div>
+
+        <div class="flex items-center justify-center gap-2 w-[355px]">
+          <div class="relative w-full">
+              <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                  <svg class="w-4 h-4 text-gray-500 fill-white dark:text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.971l-11.986 9.713zm-5.425-1.822l-6.575-5.329v12.501l6.575-7.172zm10.85 0l6.575 7.172v-12.501l-6.575 5.329zm-1.557 1.261l-3.868 3.135-3.868-3.135-8.11 8.848h23.956l-8.11-8.848z"/></svg>
+              </div>
+
+              <input readonly type="search" id="default-search" class="block w-full p-4 pl-10 text-sm placeholder-gray-400 bg-gray-700 border border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Search Mockups, Logos..." value="unitour360@gmail.com" required>
+              <a href="mailto:unitour360@gmail.com?subject=Servicios%20UniTour360°&body=¡Hola,%20estoy%20interesado%20en%20tus%20servicios!" type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Enviar correo</a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="w-[90%] border-white/20 border-1">
+
+      <div class="flex justify-between w-full px-16 py-10">
+        <span class="text-sm text-white/40">© Copyright 2023 todos los derechos reservados</span>
+
+        <div class="flex items-center justify-center gap-5">
+          <div class="w-6 h-6">
+            <svg class="w-full h-full cursor-pointer text-white/40 fill-white/40 stroke-white/40 hover:fill-slate-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </div>
+
+          <div class="w-6 h-6">
+            <svg class="w-full h-full cursor-pointer text-white/40 fill-white/40 stroke-white/40 hover:fill-slate-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script defer type="module" src="/src/index.js"></script>
+    <script defer type="module" src="/src/xxavvi.js"></script>
+  </body>
+</html>

@@ -29,6 +29,10 @@ export default defineConfig({
         {
           filename: 'natha.html',
           template: 'natha.html',
+        },
+        {
+          filename: 'xxavvi.html',
+          template: 'xxavvi.html',
         }
       ]
     })
