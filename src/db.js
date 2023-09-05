@@ -60,8 +60,6 @@ function sendOpinion () {
 }
 
 function updateComments() {
-  console.log({ opinions })
-
   const comments = [
     $('#comment-1'),
     $('#comment-2'),
@@ -71,14 +69,36 @@ function updateComments() {
   const shuffleOpinions = shuffleArray(opinions)
   comments.forEach((comment, i) => {
     if (!shuffleOpinions[i]) return
-    console.log(shuffleOpinions[i])
+    const date = new Date(shuffleOpinions[i].createdAt);
+
+    const day = date.getDate().toString().padStart(2, '0');
+    const month = (date.getMonth() + 1).toString().padStart(2, '0');
+    const year = date.getFullYear();
+
+    const formattedDate = `${day}/${month}/${year}`;
+
+    const starActive = `
+      <svg data-value="2" class="text-yellow-300 w-9 h-9 star-select" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+          <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+      </svg>
+    `
+
+    const starDesactive = `
+      <svg data-value="2" class="text-gray-300 w-9 h-9 star-select" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+          <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+      </svg>
+    `
 
     comment.innerHTML = `
-      <div class="flex flex-col justify-center items-center">
-        <div>
+      <div class="flex py-3 flex-col justify-center items-center">
+        <div class="flex">
+          ${starActive.repeat(shuffleOpinions[i].stars)}
+          ${starDesactive.repeat(5 - shuffleOpinions[i].stars)}
         </div>
-        <h3 class="font-extrabold">${shuffleOpinions[i].name}</h3>
-        <p class="mt-3 text-center">${shuffleOpinions[i].description}</p>
+
+        <h3 class="font-extrabold mt-10">${shuffleOpinions[i].name}</h3>
+        <p class="mt-5 text-center">${shuffleOpinions[i].description}</p>
+        <footer class="mt-2 text-sm text-slate-400">${formattedDate}</footer>
       </div>
     `
   })
