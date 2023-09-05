@@ -6,20 +6,15 @@ const $ = (element) => {
   return document.querySelector(element)
 }
 
-function generarNumerosAleatorios(cantidad, max) {
-  const numerosAleatorios = new Set();
+const shuffleArray = (array) => {
+  const shuffledArray = [...array];
 
-  while (numerosAleatorios.size < cantidad) {
-    const numero = Math.floor(Math.random() * max);
-    numerosAleatorios.add(numero);
+  for (let i = shuffledArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
   }
 
-  const resultado = [];
-  for (let i = 0; i < max; i++) {
-    resultado.push(numerosAleatorios.has(i) ? i : null);
-  }
-
-  return resultado;
+  return shuffledArray;
 }
 
 const opinions = []
@@ -67,22 +62,25 @@ function sendOpinion () {
 function updateComments() {
   console.log({ opinions })
 
-  const comments = {
-    0: $('#comment-1'),
-    1: $('#comment-2'),
-    2: $('#comment-3')
-  }
+  const comments = [
+    $('#comment-1'),
+    $('#comment-2'),
+    $('#comment-3')
+  ]
 
-  const nums = generarNumerosAleatorios(opinions.length > 3 ? 3 : opinions.length, opinions.length)
-  nums.forEach((num, i) => {
-    const opinion = opinions[num]
+  const shuffleOpinions = shuffleArray(opinions)
+  comments.forEach((comment, i) => {
+    if (!shuffleOpinions[i]) return
+    console.log(shuffleOpinions[i])
 
-    comments[i].innerHTML = `<div class="flex flex-col justify-center items-center">
-      <div>
+    comment.innerHTML = `
+      <div class="flex flex-col justify-center items-center">
+        <div>
+        </div>
+        <h3 class="font-extrabold">${shuffleOpinions[i].name}</h3>
+        <p class="mt-3 text-center">${shuffleOpinions[i].description}</p>
       </div>
-      <h3 class="font-extrabold">${opinion.name}</h3>
-      <p class="mt-3 text-center">${opinion.description}</p>
-    </div>`
+    `
   })
 }
 
