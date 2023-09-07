@@ -1,4 +1,5 @@
 import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2'
 
 const $ = (element) => {
   return document.querySelector(element)
@@ -19,9 +20,19 @@ const sendEmail = (e) => {
     optionEmail: optionEmail.value,
     message: descriptionEmail.value
   }).catch(e => {
-    console.log(e)
+    Swal.fire({
+      title: 'Error!',
+      text: 'A ocurrido un error al enviar tu correo',
+      icon: 'error',
+      confirmButtonText: 'Lo intentare más tarde'
+    })
   }).then(e => {
-    alert('Correo enviado correctamente!')
+    Swal.fire({
+      title: 'Correo Recibido',
+      text: 'Pronto revisaremos tu correo!',
+      icon: 'success',
+      confirmButtonText: 'Genial'
+    })
   })
 
   name.value = ""
