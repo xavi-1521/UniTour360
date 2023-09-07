@@ -7,6 +7,7 @@
     <title>UniTour 360°</title>
     <link rel="stylesheet" href="/src/styles.css">
   </head>
+
   <body class="w-screen h-screen overflow-x-hidden">
 
     <section class="relative w-screen h-20">
@@ -54,20 +55,20 @@
     <div class="mt-16 text-center">
       <div class="relative inline-block p-2">
         <span class="uppercase font-bold text-5xl lg:text-8xl text-black/[0.04] select-none">ACERCA DE</span>
-        <span class="absolute text-2xl lg:text-4xl top-1/3 left-[32%] font-extrabold tracking-tight leading-tight uppercase">Cámara 360°</span>
+        <span class="absolute text-2xl lg:text-4xl top-1/3 left-[25%] sm:left-[32%] font-extrabold tracking-tight leading-tight uppercase">Cámara 360°</span>
       </div>
     </div>
 
-    <section class="flex justify-center w-full h-auto gap-8 px-16 pt-5 my-5">
-      <div class="w-1/2 mr-16">
+    <section class="flex flex-col justify-center w-full h-auto gap-8 px-16 pt-5 my-5 sm:flex-row">
+      <div class="w-full mr-16 sm:w-1/2">
         <h1 class="mb-10 text-3xl font-extrabold">Insta360 One x2</h1>
 
         <p class="mb-5">Explora un universo de creatividad con la cámara de acción 360 de bolsillo. Captura, estabiliza y edita vídeos envolventes de 5.7K en 360 grados sin necesidad de equipo adicional. Tu herramienta todo en uno para experiencias visuales únicas.</p>
 
         <div>
-          <a href="/tour.html" class="px-5 py-3.5 mb-2 mr-2 text-sm font-medium text-center text-white rounded-lg bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300">Ver fotos 360°</a>
+          <a href="/tour.html" class="px-5 py-3.5 mb-2 sm:mr-2 text-sm font-medium text-center text-white rounded-lg bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300">Ver fotos 360°</a>
 
-          <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white focus:ring-4 focus:outline-none focus:ring-pink-200">
+          <button class="relative inline-flex items-center justify-center p-0.5 mb-2 sm:mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white focus:ring-4 focus:outline-none focus:ring-pink-200">
             <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0">
               Ir al Tour
             </span>
@@ -76,27 +77,27 @@
 
         <hr class="mt-5">
 
-        <div class="flex gap-5 mt-5">
-          <button data-modal-target="modalInstaApp" data-modal-toggle="modalInstaApp" type="button" class="flex flex-col items-center justify-center p-3 rounded-lg hover:bg-slate-400/10">
-            <img class="w-16 h-16" src="/img/instapp.png" alt="">
+        <div class="flex mt-5 sm:gap-5">
+          <button data-modal-target="modalInstaApp" data-modal-toggle="modalInstaApp" type="button" class="flex flex-col p-3 rounded-lg sm:items-center sm:justify-center hover:bg-slate-400/10">
+            <img class="w-16 h-16" src="/img/instapp.png" alt="InstApp">
             <span class="text-black/60">Insta360</span>
           </button>
 
           <button data-modal-target="modalInstaStudio" data-modal-toggle="modalInstaStudio" class="flex flex-col items-center justify-center p-3 rounded-lg hover:bg-slate-400/10">
-            <img class="w-16 h-16" src="/img/studio.png" alt="">
+            <img class="w-16 h-16" src="/img/studio.png" alt="Studio">
             <span class="text-black/60">Insta Studio</span>
           </button>
 
           <button data-modal-target="modalInstaPlayer" data-modal-toggle="modalInstaPlayer" class="flex flex-col items-center justify-center p-3 rounded-lg hover:bg-slate-400/10">
-            <img class="w-16 h-16" src="/img/player.png" alt="">
+            <img class="w-16 h-16" src="/img/player.png" alt="Player">
             <span class="text-black/60">Insta Player</span>
           </button>
         </div>
       </div>
 
-      <div class="w-1/2 rounded-lg bg-gradient-to-t from-slate-300 via-slate-200 to-slate-500 h-96">
+      <div class="w-full h-56 rounded-lg sm:h-96 sm:w-1/2 bg-gradient-to-t from-slate-300 via-slate-200 to-slate-500">
         <div id="camara-carousel" class="relative w-full" data-carousel="slide">
-          <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+          <div class="relative h-56 overflow-hidden rounded-lg sm:h-96">
               <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <img src="img/insta1.jpg" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 rounded-lg top-1/2 left-1/2" alt="...">
               </div>
@@ -148,10 +149,10 @@
       </div>
     </div>
 
-    <section class="flex w-full h-auto gap-8 px-16 pt-5 my-5">
-      <div class="w-1/2 rounded-lg bg-gradient-to-t from-slate-300 via-slate-200 to-slate-500 h-96">
+    <section class="flex flex-col w-full h-auto gap-8 px-16 pt-5 my-5 sm:flex-row">
+      <div class="w-full h-56 rounded-lg sm:w-1/2 bg-gradient-to-t from-slate-300 via-slate-200 to-slate-500 sm:h-96">
         <div id="tripode-carousel" class="relative w-full" data-carousel="slide">
-          <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+          <div class="relative h-56 overflow-hidden rounded-lg sm:h-96">
               <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <img src="img/trip1.jpg" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 rounded-lg top-1/2 left-1/2" alt="...">
               </div>
@@ -198,7 +199,7 @@
 
       </div>
 
-      <div class="flex flex-col justify-center w-1/2">
+      <div class="flex flex-col justify-center w-full sm:w-1/2">
         <h1 class="mb-10 text-3xl font-extrabold">Especificaciones</h1>
 
         <article>
@@ -257,47 +258,47 @@
     <div class="mt-16 mb-16 text-center">
       <div class="relative inline-block p-2">
         <span class="uppercase font-bold text-5xl lg:text-8xl text-black/[0.04] select-none">ACERCA DE</span>
-        <span class="absolute text-2xl lg:text-4xl top-1/3 left-[0%] font-extrabold tracking-tight leading-tight uppercase">Edición de Imágenes y Videos</span>
+        <span class="absolute text-2xl lg:text-4xl top-1/3 left-[2%] sm:left-[0%] font-extrabold tracking-tight leading-tight uppercase">Edición de Imágenes y Videos</span>
       </div>
     </div>
 
-    <section class="flex w-full h-auto gap-8 px-16 pt-5 my-5">
-      <div class="flex flex-col justify-center w-1/2">
-        <h1 class="mb-10 text-3xl font-extrabold">Adobe Illustrator</h1>
+    <section class="flex flex-col w-full h-auto gap-8 px-16 pt-5 my-5 sm:flex-row">
+      <div class="flex flex-col justify-center w-full sm:w-1/2">
+        <h1 class="mb-10 text-3xl font-extrabold text-center sm:text-start">Adobe Illustrator</h1>
 
         <p class="mb-5">Es una potente herramienta de diseño gráfico vectorial que te permite crear ilustraciones, gráficos y diseños de alta calidad. <br><br>
           Este editor de gráficos vectoriales permitió crear contenido para las redes sociales de UniTour360*, editar imágenes 360° y mucho más.</p>
 
       </div>
 
-      <div class="flex justify-end w-1/2 rounded-lg h-96">
+      <div class="flex justify-end w-full rounded-lg sm:w-1/2 h-52 sm:h-96">
         <img class="h-full" src="/img/PC_(AI).png" alt="AI">
       </div>
     </section>
 
-    <section class="flex w-full h-auto gap-8 px-16 pt-5 my-5">
-      <div class="w-1/2 rounded-lg h-96">
+    <section class="flex flex-col w-full h-auto gap-8 px-16 pt-5 my-5 sm:flex-row">
+      <div class="order-2 w-full rounded-lg sm:order-1 sm:w-1/2 h-52 sm:h-96">
         <img class="h-full" src="/img/PC_(PS).png" alt="AI">
       </div>
 
-      <div class="flex flex-col justify-center w-1/2">
-        <h1 class="mb-10 text-3xl font-extrabold">Adobe Photoshop</h1>
+      <div class="flex flex-col justify-center order-1 w-full sm:order-2 sm:w-1/2">
+        <h1 class="mb-10 text-3xl font-extrabold text-center sm:text-start">Adobe Photoshop</h1>
 
         <p class="mb-5">Es una destacada aplicación de edición de imágenes que ofrece un conjunto diverso de herramientas para manipular, retocar y mejorar fotografías y gráficos. Con capacidades avanzadas de ajuste, corrección de color y composición.</p>
 
       </div>
     </section>
 
-    <section class="flex w-full h-auto gap-8 px-16 pt-5 my-5">
-      <div class="flex flex-col justify-center w-1/2">
-        <h1 class="mb-10 text-3xl font-extrabold">Wondershare Filmora</h1>
+    <section class="flex flex-col w-full h-auto gap-8 px-16 pt-5 my-5 sm:flex-row">
+      <div class="flex flex-col justify-center w-full sm:w-1/2">
+        <h1 class="mb-10 text-3xl font-extrabold text-center sm:text-start">Wondershare Filmora</h1>
 
         <p class="mb-5">Es un software de edición de videos que brinda a los usuarios la capacidad de crear y editar videos de manera efectiva. <br><br>
         Esta herramienta fue utilizada para editar y mejorar los videos capturados con la cámara Insta 360 ONE X2, optimizando la experiencia del recorrido virtual.</p>
 
       </div>
 
-      <div class="flex justify-end w-1/2 rounded-lg h-96">
+      <div class="flex justify-end w-full rounded-lg sm:w-1/2 h-52 sm:h-96">
         <img class="h-full" src="/img/PC_(WF).png" alt="AI">
       </div>
     </section>
@@ -307,49 +308,48 @@
     <div class="mt-16 mb-5 text-center">
       <div class="relative inline-block p-2">
         <span class="uppercase font-bold text-5xl lg:text-8xl text-black/[0.04] select-none">ACERCA DE</span>
-        <span class="absolute text-2xl lg:text-4xl top-1/3 left-[20%] font-extrabold tracking-tight leading-tight uppercase">Edición del Tour</span>
+        <span class="absolute text-2xl lg:text-4xl top-1/3 left-[15%] sm:left-[20%] font-extrabold tracking-tight leading-tight uppercase">Edición del Tour</span>
       </div>
     </div>
 
-    <section class="flex flex-col items-center justify-center">
-      <div class="w-1/2 mt-5 mb-5">
+    <section class="flex flex-col items-center justify-center px-16 sm:px-0">
+      <div class="w-full mt-5 mb-5 sm:w-1/2">
         <img class="w-full h-full" src="img/PC_(KUULA).png" alt="Kuula">
       </div>
 
-      <span class="w-2/3 text-xl text-center text-slate-500">
+      <span class="w-full text-xl text-center sm:w-2/3 text-slate-500">
         Kuula es una plataforma digital especializada en la creación y presentación de contenido visual en formato 360 grados. Esta herramienta permite a los usuarios cargar, editar y compartir imágenes y videos en 360 grados, lo que brinda la posibilidad de crear recorridos virtuales interactivos y envolventes.
       </span>
     </section>
 
-    <section class="flex w-full h-auto gap-8 px-16 pt-5 my-5">
-      <div class="flex justify-end w-3/5 rounded-lg">
+    <section class="flex flex-col w-full h-auto px-4 pt-5 my-5 sm:flex-row sm:px-16 sm:gap-8">
+      <div class="flex justify-end w-full h-auto rounded-lg sm:w-3/5">
         <img class="w-full" src="/img/360/tour-movil_cuarto.png" alt="AI">
       </div>
 
-      <div class="flex flex-col justify-center w-2/5">
-        <h1 class="mb-10 text-3xl font-extrabold">Tu Tour en el Móvil</h1>
+      <div class="flex flex-col justify-center w-full sm:w-2/5">
+        <h1 class="mb-10 text-3xl font-extrabold text-center sm:text-start">Tu Tour en el Móvil</h1>
 
-        <p class="mb-5">Explora el tour virtual en tu dispositivo móvil y sumérgete en la experiencia 360° desde la comodidad de tu smartphone o tablet.</p>
-
+        <p class="mb-5 text-center sm:text-start">Explora el tour virtual en tu dispositivo móvil y sumérgete en la experiencia 360° desde la comodidad de tu smartphone o tablet.</p>
       </div>
     </section>
 
      <!-- =================================================================== -->
 
-    <div class="mt-16 mb-5 text-center">
+    <div class="mt-5 mb-5 text-center sm:mt-10">
       <div class="relative inline-block p-2">
         <span class="uppercase font-bold text-5xl lg:text-8xl text-black/[0.04] select-none">ACERCA DE</span>
-        <span class="absolute text-2xl lg:text-4xl top-1/3 left-[8%] font-extrabold tracking-tight leading-tight uppercase">Gafas de Realidad Virtual</span>
+        <span class="absolute text-2xl lg:text-4xl top-1/3 left-[4%] sm:left-[8%] font-extrabold tracking-tight leading-tight uppercase">Gafas de Realidad Virtual</span>
       </div>
     </div>
 
-    <section class="flex w-full h-auto gap-8 px-16 pt-5 my-5">
-      <div class="flex items-center justify-center w-1/2 rounded-lg h-96">
-        <img class="h-72" src="/img/cel.png" alt="Celular">
+    <section class="flex w-full h-auto gap-8 px-6 pt-5 my-5 sm:px-16 mt-14">
+      <div class="flex items-center justify-center w-1/2 rounded-lg sm:h-96">
+        <img class="h-40 sm:h-72" src="/img/cel.png" alt="Celular">
       </div>
 
-      <div class="flex items-center justify-center w-1/2 rounded-lg h-96">
-        <img class="h-80" src="/img/vr.png" alt="VR">
+      <div class="flex items-center justify-center w-1/2 rounded-lg sm:h-96">
+        <img class="h-40 sm:h-80" src="/img/vr.png" alt="VR">
       </div>
     </section>
 
@@ -359,7 +359,7 @@
         Descubre cómo cada giro de cabeza te transporta a través de nuestros espacios en 360°, brindándote una sensación realista y emocionante.
       </span>
 
-      <video autoplay loop class="w-1/2 mt-10 rounded-lg shadow-lg shadow-slate-600" src="/video/vr.mov"></video>
+      <video autoplay loop class="w-[95%] mt-10 rounded-lg shadow-lg sm:w-1/2 shadow-slate-600" src="/video/vr.mov"></video>
     </section>
 
     <!-- =================================================================== -->
@@ -498,7 +498,7 @@
      <!-- =================================================================== -->
 
      <div id="modalInstaApp" tabindex="-1" aria-hidden="true" class="fixed inset-0 z-50 items-center justify-center hidden w-screen h-screen bg-slate-500/30">
-      <div class="relative w-1/2 bg-white rounded-lg shadow">
+      <div class="relative w-full bg-white rounded-lg shadow sm:w-1/2">
         <!-- Modal header -->
         <div class="flex items-start justify-between p-4 border-b rounded-t">
             <div class="flex items-center gap-5">
@@ -521,11 +521,11 @@
               Es una aplicación móvil que permite la captura, edición, compartir imágenes y videos en formato 360 grados. Esta herramienta permite a los usuarios crear contenido visual envolvente y dinámico utilizando sus dispositivos móviles.
             </p>
         </div>
-    </div>
+      </div>
     </div>
 
     <div id="modalInstaStudio" tabindex="-1" aria-hidden="true" class="fixed inset-0 z-50 items-center justify-center hidden w-screen h-screen bg-slate-500/30">
-      <div class="relative w-1/2 bg-white rounded-lg shadow">
+      <div class="relative w-full bg-white rounded-lg shadow sm:w-1/2">
         <!-- Modal header -->
         <div class="flex items-start justify-between p-4 border-b rounded-t">
             <div class="flex items-center gap-5">
@@ -551,9 +551,8 @@
     </div>
     </div>
 
-
     <div id="modalInstaPlayer" tabindex="-1" aria-hidden="true" class="fixed inset-0 z-50 items-center justify-center hidden w-screen h-screen bg-slate-500/30">
-      <div class="relative w-1/2 bg-white rounded-lg shadow">
+      <div class="relative w-full bg-white rounded-lg shadow sm:w-1/2">
         <!-- Modal header -->
         <div class="flex items-start justify-between p-4 border-b rounded-t">
             <div class="flex items-center gap-5">
@@ -580,7 +579,7 @@
     </div>
 
     <div id="modalBulletTime" tabindex="-1" aria-hidden="true" class="fixed inset-0 z-50 items-center justify-center hidden w-screen h-screen bg-slate-500/30">
-      <div class="relative w-1/2 bg-white rounded-lg shadow">
+      <div class="relative w-full bg-white rounded-lg shadow sm:w-1/2">
         <!-- Modal header -->
         <div class="flex items-start justify-between p-4 border-b rounded-t">
             <h3 class="text-xl font-semibold text-gray-900">Modo: Bullet Time</h3>
@@ -606,7 +605,7 @@
     </div>
 
     <div id="modalDrone" tabindex="-1" aria-hidden="true" class="fixed inset-0 z-50 items-center justify-center hidden w-screen h-screen bg-slate-500/30">
-      <div class="relative w-1/2 bg-white rounded-lg shadow">
+      <div class="relative w-full bg-white rounded-lg shadow sm:w-1/2">
         <!-- Modal header -->
         <div class="flex items-start justify-between p-4 border-b rounded-t">
             <h3 class="text-xl font-semibold text-gray-900">Modo: Drone</h3>
@@ -631,15 +630,15 @@
       </div>
     </div>
 
-    <footer class="flex flex-col items-center w-full h-auto mt-10 text-white bg-black">
+    <footer class="flex flex-col items-center w-full h-auto mt-16 text-white bg-black">
 
-      <div class="flex items-center justify-between w-full px-16">
-        <div class="flex items-center justify-start h-full py-5 select-none">
+      <div class="flex flex-col items-center justify-between w-full px-16 sm:flex-row">
+        <div class="flex items-center justify-start h-full py-5 mt-10 select-none sm:mt-0">
           <img class="h-16 w-36" src="/logo-white.png" alt="">
         </div>
 
-        <div class="text-sm text-white/40 w-[350px]">
-          <ul class="flex gap-5">
+        <div class="text-sm text-white/40 w-[350px] mt-11 sm:mt-0">
+          <ul class="flex items-center justify-center gap-5">
             <li><a href="/index.html" class="hover:text-white" href="">Inicio</a></li>
             <li><a href="/services.html" class="hover:text-white" href="">Servicios</a></li>
             <li><a href="/tour.html" class="hover:text-white" href="">Tour</a></li>
@@ -647,7 +646,7 @@
           </ul>
         </div>
 
-        <div class="flex items-center justify-center gap-2 w-[355px]">
+        <div class="flex items-center justify-center gap-2 w-[355px] my-6 sm:my-0">
           <div class="relative w-full">
               <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                   <svg class="w-4 h-4 text-gray-500 fill-white dark:text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.971l-11.986 9.713zm-5.425-1.822l-6.575-5.329v12.501l6.575-7.172zm10.85 0l6.575 7.172v-12.501l-6.575 5.329zm-1.557 1.261l-3.868 3.135-3.868-3.135-8.11 8.848h23.956l-8.11-8.848z"/></svg>
@@ -661,10 +660,10 @@
 
       <hr class="w-[90%] border-white/20 border-1">
 
-      <div class="flex justify-between w-full px-16 py-10">
-        <span class="text-sm text-white/40">© Copyright 2023 todos los derechos reservados</span>
+      <div class="flex flex-col justify-between w-full px-16 py-10 sm:flex-row">
+        <span class="order-2 text-sm text-center sm:order-1 text-white/40">© Copyright 2023 todos los derechos reservados</span>
 
-        <div class="flex items-center justify-center gap-5">
+        <div class="flex items-center justify-center order-1 gap-5 mb-5 sm:order-2 sm:mb-0">
           <div class="w-6 h-6">
            <a target="_blank" href="https://www.instagram.com/unitour360/">
              <svg class="w-full h-full cursor-pointer text-white/40 fill-white/40 stroke-white/40 hover:fill-slate-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
