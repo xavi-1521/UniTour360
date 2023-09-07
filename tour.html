@@ -54,24 +54,24 @@
     <section class="relative w-full h-96">
       <script src="https://static.kuula.io/embed.js" data-kuula="https://kuula.co/share/5k4qK?logo=1&info=1&fs=0&vr=0&sd=1&gyro=0&autorotate=0.19&thumbs=1&inst=0&keys=0" data-width="100%" data-height="400px"></script>
 
-      <div class="absolute rounded-[1rem] w-5/6 inset-y-80 inset-x-[6.5rem] backdrop-blur-lg bg-slate-200/70 h-60">
-        <div class="flex items-center justify-between w-full h-full p-4">
-          <div>
-            <img src="/logo-black.png" alt="">
+      <div class="absolute rounded-[1rem] w-5/6 inset-y-64 sm:inset-y-80 inset-x-[2rem] sm:inset-x-[6.5rem] backdrop-blur-lg bg-slate-200/70 h-[20rem] sm:h-60">
+        <div class="flex flex-col items-center w-full h-full p-4 sm:justify-between sm:flex-row">
+          <div class="h-20 sm:h-auto">
+            <img class="w-full h-full" src="/logo-black.png" alt="">
           </div>
 
-          <div class="flex flex-col pr-14">
-            <span class="mt-2 text-5xl font-extrabold text-center">Tour Virtual 360° de UNIPAZ</span>
+          <div class="flex flex-col sm:pr-14">
+            <span class="mt-2 text-xl font-extrabold text-center sm:text-5xl">Tour Virtual 360° de UNIPAZ</span>
 
             <span class="mt-3 text-sm text-center text-slate-500">
               Descubre cada rincón, interactúa con los espacios y sumérgete en una experiencia única desde cualquier dispositivo. ¡La aventura te espera!
             </span>
 
-            <span class="mt-5 text-center">
-              <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Ver Tour</button>
+            <span class="flex justify-center h-12 mt-5 text-center sm:h-auto">
+              <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 sm:py-2.5 text-center mr-2 mb-2">Ver Tour</button>
 
-              <a href="/about.html" class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-yellow-200 focus:ring-4 focus:outline-none focus:ring-red-100">
-                <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0">
+              <a href="/about.html" class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-[0.7rem] sm:text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 sm:group-hover:from-red-200 sm:group-hover:via-red-300 sm:group-hover:to-yellow-200 focus:ring-4 focus:outline-none focus:ring-red-100">
+                <span class="relative text-white sm:text-black px-5 sm:py-2.5 transition-all ease-in duration-75 sm:bg-white rounded-md group-hover:bg-opacity-0">
                     Ir a Acerca de
                 </span>
               </a>
@@ -85,7 +85,7 @@
     <div class="mt-56 mb-5 text-center">
       <div class="relative inline-block p-2">
         <span class="uppercase font-bold text-5xl lg:text-8xl text-black/[0.04] select-none">Unipaz</span>
-        <span class="absolute text-2xl lg:text-4xl top-1/3 left-[20%] font-extrabold tracking-tight leading-tight uppercase">UniTour 360°</span>
+        <span class="absolute text-2xl lg:text-4xl top-1/3 left-[12%] sm:left-[20%] font-extrabold tracking-tight leading-tight uppercase">UniTour 360°</span>
       </div>
     </div>
 
@@ -96,47 +96,47 @@
     </section>
     <!-- =================================================================== -->
 
-    <section class="flex w-full h-auto gap-8 px-16 pt-5 my-5 mt-10">
-      <div class="flex items-center justify-center w-1/2 rounded-lg h-96">
+    <section class="flex flex-col w-full h-auto px-8 pt-5 my-5 mt-10 sm:gap-8 sm:px-16 sm:flex-row">
+      <div class="flex items-center justify-center order-2 w-full rounded-lg sm:order-1 sm:w-1/2 sm:h-96">
         <video loop autoplay class="w-full rounded-lg shadow-lg shadow-slate-600" src="/video/video-11.mkv"></video>
       </div>
 
-      <div class="flex flex-col justify-center w-1/2">
-        <h1 class="mb-10 text-3xl font-extrabold">Avanza en el tour</h1>
+      <div class="flex flex-col justify-center order-1 w-full sm:order-2 sm:w-1/2">
+        <h1 class="mb-5 text-3xl font-extrabold text-center sm:mb-10 sm:text-start">Avanza en el tour</h1>
 
-        <p class="mb-5">Podrás detallar puntos de color blanco en el piso de cada fotografía. Estos puntos te ayudarán a avanzar o retroceder a una imagen. De esta manera podrás recorrer cada instalación del Instituto Universitario de la Paz – UNIPAZ.</p>
+        <p class="mb-5 text-center sm:text-start">Podrás detallar puntos de color blanco en el piso de cada fotografía. Estos puntos te ayudarán a avanzar o retroceder a una imagen. De esta manera podrás recorrer cada instalación del Instituto Universitario de la Paz – UNIPAZ.</p>
       </div>
     </section>
 
-    <section class="flex w-full h-auto gap-8 px-16 pt-5 my-5">
-      <div class="flex flex-col justify-center w-1/2">
-        <h1 class="mb-10 text-3xl font-extrabold">Puntos de información</h1>
+    <section class="flex flex-col w-full h-auto px-8 pt-10 my-5 sm:pt-5 sm:gap-8 sm:px-16 sm:flex-row">
+      <div class="flex flex-col justify-center w-full sm:w-1/2">
+        <h1 class="mb-5 text-3xl font-extrabold text-center sm:mb-10 sm:text-start">Puntos de información</h1>
 
-        <p class="mb-5">
+        <p class="mb-5 text-center sm:text-start">
           Durante el recorrido virtual puedes encontrar diferentes puntos de información o interés, puedes hacer clic sobre el y se desplegará una ventana con la respectiva información.
         </p>
       </div>
 
-      <div class="flex items-center justify-center w-1/2 rounded-lg h-96">
+      <div class="flex items-center justify-center w-full rounded-lg sm:w-1/2 sm:h-96">
         <video loop autoplay class="w-full rounded-lg shadow-lg shadow-slate-600" src="/video/video-12.mp4"></video>
       </div>
     </section>
 
-    <section class="flex w-full h-auto gap-8 px-16 pt-5 my-5">
-      <div class="w-1/2 rounded-lg h-96">
+    <section class="flex flex-col w-full h-auto px-8 pt-10 my-5 sm:pt-5 sm:gap-8 sm:px-16 sm:flex-row">
+      <div class="order-2 w-full rounded-lg sm:order-1 sm:w-1/2 sm:h-96">
         <img class="w-full" src="/img/360/Interfaces_Celular.png" alt="AI">
       </div>
 
-      <div class="flex flex-col justify-center w-1/2">
-        <h1 class="mb-10 text-3xl font-extrabold">Desde tu móvil</h1>
+      <div class="flex flex-col justify-center order-1 w-full sm:order-2 sm:w-1/2">
+        <h1 class="mb-5 text-3xl font-extrabold text-center sm:mb-10 sm:text-start">Desde tu móvil</h1>
 
-        <p class="mb-5">UniTour 360° al alcance de tu mano. Haciendo uso de tu smartphone podrás disfrutar del recorrido virtual sin ningún problema. Recuerda conectarte a internet.</p>
+        <p class="mb-5 text-center sm:text-start">UniTour 360° al alcance de tu mano. Haciendo uso de tu smartphone podrás disfrutar del recorrido virtual sin ningún problema. Recuerda conectarte a internet.</p>
       </div>
     </section>
 
     <!-- =================================================================== -->
 
-    <section class="flex flex-col gap-2 px-16 mt-16">
+    <section class="flex flex-col gap-2 px-8 mt-20 sm:mt-16 sm:px-16">
       <div class="relative w-full h-80 bg-slate-600">
         <div class="absolute z-10 flex flex-col w-1/2 p-5">
           <h3 class="text-4xl font-extrabold text-white uppercase title2">Paloma</h3>
@@ -147,8 +147,8 @@
         <img class="object-cover w-full h-full" src="/img/palomita.jpg" alt="Paloma">
       </div>
 
-      <div class="flex gap-2">
-        <div class="relative w-1/2 bg-red-400 h-80">
+      <div class="flex flex-col gap-2 sm:flex-row">
+        <div class="relative w-full bg-red-400 sm:w-1/2 h-80">
           <div class="absolute z-10 flex flex-col w-2/3 p-5">
             <h3 class="text-4xl font-extrabold text-white uppercase title2">Senderos</h3>
             <span class="text-lg text-white">Disfruta de espacios de vida y recreación.</span>
@@ -158,7 +158,7 @@
           <img class="object-cover w-full h-full" src="/img/sendero.jpg" alt="Sendero">
         </div>
 
-        <div class="relative w-1/2 bg-blue-600 h-80">
+        <div class="relative w-full bg-blue-600 sm:w-1/2 h-80">
           <div class="absolute z-10 flex flex-col w-2/3 p-5">
             <h3 class="text-4xl font-extrabold text-white uppercase title2">La Virgen</h3>
             <span class="text-lg text-white">Campos llenos de color en UNIPAZ</span>
@@ -172,32 +172,32 @@
 
     <!-- =================================================================== -->
 
-    <section class="flex w-full h-auto gap-8 px-16 pt-5 my-5 mt-20">
-      <div class="flex flex-col justify-center w-1/2">
-        <h1 class="mb-10 text-3xl font-extrabold">Tour virtual</h1>
+    <section class="flex flex-col w-full h-auto px-8 my-5 sm:pt-5 mt-14 sm:mt-20 sm:gap-8 sm:px-16 sm:flex-row">
+      <div class="flex flex-col justify-center w-full sm:w-1/2">
+        <h1 class="mb-5 text-3xl font-extrabold text-center sm:mb-10 sm:text-start">Tour virtual</h1>
 
-        <p class="mb-5">Disfruta de nuestro recorrido virtual desde la comodidad de tu computadora personal. Simplemente con conexión a internet y prepárate para disfrutar de esta aventura.</p>
+        <p class="mb-5 text-center sm:text-start">Disfruta de nuestro recorrido virtual desde la comodidad de tu computadora personal. Simplemente con conexión a internet y prepárate para disfrutar de esta aventura.</p>
       </div>
 
-      <div class="flex justify-end w-1/2 rounded-lg h-96">
+      <div class="flex justify-end w-full rounded-lg sm:w-1/2 sm:h-96">
         <img class="h-full" src="/img/pcunitour.png" alt="UniTour">
       </div>
     </section>
 
     <h1 class="mt-16 mb-3 text-3xl font-extrabold text-center">Gafas VR</h1>
     <section class="flex items-center justify-center">
-      <div class="w-[60%] text-center">Para aumentar tu experiencia, puedes hacer clic en el siguiente botón para visualizar el tour a través de tus gafas VR. Para avanzar a la siguiente imagen dentro de este modo, basta con centrar tu mirada en el punto blanco de avanzar.</div>
+      <div class="w-[85%] mt-5 sm:mt-0 sm:w-[60%] text-center">Para aumentar tu experiencia, puedes hacer clic en el siguiente botón para visualizar el tour a través de tus gafas VR. Para avanzar a la siguiente imagen dentro de este modo, basta con centrar tu mirada en el punto blanco de avanzar.</div>
     </section>
 
 
      <!-- =================================================================== -->
 
-    <section class="flex w-full h-auto gap-8 px-16 pt-5 my-5">
-      <div class="flex items-center justify-center w-1/2 rounded-lg h-96">
-        <img class="h-72" src="/img/cel.png" alt="Celular">
+    <section class="flex flex-col w-full h-auto px-8 pt-5 my-5 sm:gap-8 sm:px-16 sm:flex-row">
+      <div class="flex items-center justify-center w-full rounded-lg sm:w-1/2 sm:h-96">
+        <img class="sm:h-72" src="/img/cel.png" alt="Celular">
       </div>
 
-      <div class="flex items-center justify-center w-1/2 rounded-lg h-96">
+      <div class="flex items-center justify-center w-full rounded-lg sm:w-1/2 sm:h-96">
         <img class="h-full" src="/img/gafitas.png" alt="VR">
       </div>
     </section>
@@ -230,23 +230,23 @@
 
      <!-- =================================================================== -->
 
-    <footer class="flex flex-col items-center w-full h-auto mt-10 text-white bg-black">
+    <footer class="flex flex-col items-center w-full h-auto mt-16 text-white bg-black">
 
-      <div class="flex items-center justify-between w-full px-16">
-        <div class="flex items-center justify-start h-full py-5 select-none">
+      <div class="flex flex-col items-center justify-between w-full px-16 sm:flex-row">
+        <div class="flex items-center justify-start h-full py-5 mt-10 select-none sm:mt-0">
           <img class="h-16 w-36" src="/logo-white.png" alt="">
         </div>
 
-        <div class="text-sm text-white/40 w-[360px]">
-          <ul class="flex gap-5">
+        <div class="text-sm text-white/40 w-[360px] mt-11 sm:mt-0">
+          <ul class="flex items-center justify-center gap-5 sm:items-start sm:justify-start">
             <li><a href="/index.html" class="hover:text-white" href="">Inicio</a></li>
-            <li><a href="/about.html" class="hover:text-white" href="">Acerca de</a></li>
+            <li class="text-center sm:text-start"><a href="/about.html" class="hover:text-white" href="">Acerca de</a></li>
             <li><a href="/services.html" class="hover:text-white" href="">Servicios</a></li>
             <li><a href="/devs.html" class="hover:text-white" href="">Desarrolladores</a></li>
           </ul>
         </div>
 
-        <div class="flex items-center justify-center gap-2 w-[355px]">
+        <div class="flex items-center justify-center gap-2 w-[355px] my-6 sm:my-0">
           <div class="relative w-full">
               <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                   <svg class="w-4 h-4 text-gray-500 fill-white dark:text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.971l-11.986 9.713zm-5.425-1.822l-6.575-5.329v12.501l6.575-7.172zm10.85 0l6.575 7.172v-12.501l-6.575 5.329zm-1.557 1.261l-3.868 3.135-3.868-3.135-8.11 8.848h23.956l-8.11-8.848z"/></svg>
@@ -260,10 +260,10 @@
 
       <hr class="w-[90%] border-white/20 border-1">
 
-      <div class="flex justify-between w-full px-16 py-10">
-        <span class="text-sm text-white/40">© Copyright 2023 todos los derechos reservados</span>
+      <div class="flex flex-col justify-between w-full px-16 py-10 sm:flex-row">
+        <span class="order-2 text-sm text-center sm:order-1 text-white/40">© Copyright 2023 todos los derechos reservados</span>
 
-        <div class="flex items-center justify-center gap-5">
+        <div class="flex items-center justify-center order-1 gap-5 mb-5 sm:order-2 sm:mb-0">
           <div class="w-6 h-6">
            <a target="_blank" href="https://www.instagram.com/unitour360/">
              <svg class="w-full h-full cursor-pointer text-white/40 fill-white/40 stroke-white/40 hover:fill-slate-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
