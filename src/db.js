@@ -1,4 +1,4 @@
-
+import Swal from 'sweetalert2'
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, addDoc, getDocs } from 'firebase/firestore';
 
@@ -51,12 +51,22 @@ function sendOpinion () {
   };
 
   addDoc(opinionCollection, form)
-  .then(docRef => {
-    console.log("Dato guardado con ID: ", docRef.id);
-  })
-  .catch(error => {
-    console.error("Error al guardar el dato: ", error);
-  });
+    .then(docRef => {
+      Swal.fire({
+        title: 'Opinión recibida',
+        text: 'Gracias por calificarnos y darnos tu aporte',
+        icon: 'success',
+        confirmButtonText: 'Genial'
+      })
+    })
+    .catch(error => {
+      Swal.fire({
+        title: 'Error!',
+        text: 'A ocurrido un error al guardar tu opinión',
+        icon: 'error',
+        confirmButtonText: 'Lo intentare más tarde'
+      })
+    });
 }
 
 function updateComments() {
