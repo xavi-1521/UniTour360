@@ -1,6 +1,6 @@
-import Swal from 'sweetalert2'
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, addDoc, getDocs } from 'firebase/firestore';
+import Swal from 'sweetalert2'
 
 const $ = (element) => {
   return document.querySelector(element)
@@ -100,15 +100,16 @@ function updateComments() {
     `
 
     comment.innerHTML = `
-      <div class="flex py-3 flex-col justify-center items-center">
+      <div class="flex py-3 w-full h-full flex-col justify-between items-center">
         <div class="flex">
           ${starActive.repeat(shuffleOpinions[i].stars)}
           ${starDesactive.repeat(5 - shuffleOpinions[i].stars)}
         </div>
 
-        <h3 class="font-extrabold mt-10">${shuffleOpinions[i].name}</h3>
-        <p class="mt-5 text-center">${shuffleOpinions[i].description}</p>
-        <footer class="mt-2 text-sm text-slate-400">${formattedDate}</footer>
+        <h3 class="mt-12 font-extrabold">${shuffleOpinions[i].name}</h3>
+        <div class="mt-5 px-2 h-full text-center overflow-y-auto">${shuffleOpinions[i].description}</div>
+
+        <footer class="mt-2 text-sm text-slate-800/40">${formattedDate}</footer>
       </div>
     `
   })
